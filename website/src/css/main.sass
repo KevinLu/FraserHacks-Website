@@ -5,11 +5,13 @@ $custom-purple: #FC00FF
 $custom-green: #FC00FF
 
 section 
-    width: 100%
+    scroll-snap-align: start
+    padding: 7em
     height: 100vh
+    box-sizing: border-box
 
 .hero_section
-    background-image: url("/assets/Hero/svgs/Path\ 3.svg")
+    background-image: url("/website/assets/Hero/svgs/Path 3.svg")
     background-repeat: no-repeat
 
 .hero_section.p
@@ -20,6 +22,7 @@ section
     width: 8vw
     padding: 3vw 0 0 38vw
 
-.container 
+body 
     scroll-snap-type: y mandatory
+    overflow-y: scroll
     -ms-scroll-snap-type: mandatory
