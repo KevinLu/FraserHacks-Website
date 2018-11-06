@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Assistant");
 * {
   margin: 0;
   padding: 0;
@@ -15,23 +17,23 @@ body {
 }
 
 h1 {
-  font-family: Tw Cen MT;
-  font-size: 130pt;
+  font-family: Assistant, 700;
+  font-size: 10vw;
 }
 
 h2 {
-  font-size: 50pt;
+  font-size: 4vw;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 40pt;
+  font-size: 3vw;
   font-weight: bold;
 }
 
 p {
-  font-family: Muli;
-  font-size: 22pt;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.8vw;
 }
 
 section {
@@ -45,6 +47,7 @@ section {
 .hero_section {
   background-image: url("/website/assets/Hero/svgs/Path 3.svg");
   background-repeat: no-repeat;
+  background-size: 99vw;
 }
 
 .hero_section.p {
