@@ -37,7 +37,6 @@ p {
 }
 
 section {
-  scroll-snap-align: start;
   padding: 7em;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -58,12 +57,5 @@ section {
   position: absolute;
   width: 8vw;
   padding: 3vw 0 0 38vw;
-}
-
-body {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  -ms-scroll-snap-type: mandatory;
 }
 /*# sourceMappingURL=main.css.map */
