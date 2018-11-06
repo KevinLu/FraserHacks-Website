@@ -37,13 +37,14 @@ p {
 }
 
 section {
-  padding: 7em;
+  padding: 3em;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .hero_section {
+  padding: 7em;
   background-image: url("/website/assets/Hero/svgs/Path 3.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -57,5 +58,14 @@ section {
   position: absolute;
   width: 8vw;
   padding: 3vw 0 0 38vw;
+}
+
+footer {
+  height: 45vh !important;
+  background-color: cornflowerblue;
+  background-image: url("/website/assets/Footer/svgs/rocket.svg");
+  background-repeat: no-repeat;
+  background-position-x: -5vw;
+  background-position-y: 4vw;
 }
 /*# sourceMappingURL=main.css.map */
