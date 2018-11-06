@@ -3,7 +3,8 @@
  */
 $(function() {
     $.scrollify({
-      section : ".full-viewport-height",
+      section : ".snapscroll",
       scrollSpeed: 900,
+      interstitialSection: "footer"
     });
   });
