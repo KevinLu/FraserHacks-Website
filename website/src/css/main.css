@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
-@import url("https://fonts.googleapis.com/css?family=Assistant");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800");
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: Muli, sans-serif;
   font-size: 1.8vw;
 }
 
@@ -44,7 +44,7 @@ section {
 }
 
 .hero_section {
-  padding: 9em 4em;
+  padding: 12em 9em;
   background-image: url("/website/assets/Hero/svgs/Path 3.svg");
   background-repeat: no-repeat;
   background-size: 102%;
@@ -54,10 +54,18 @@ section {
   color: white;
   width: 50%;
   font-size: 100%;
+  border-left: #FFA54A;
+  border-style: solid;
+  padding: 0.1em 0.5em;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
 }
 
-.hero_section {
-  height: 1vw;
+.hero_section h1 {
+  color: white;
+  font-size: 6em;
+  margin-left: -0.5vw;
 }
 
 .hero_circle_1 {
@@ -73,5 +81,38 @@ footer {
   background-repeat: no-repeat;
   background-position-x: -5vw;
   background-position-y: 4vw;
+}
+
+.CTA_Button#first {
+  font-family: Muli;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 4px 20px;
+  border-style: solid;
+  border-radius: 80px;
+  border-color: #5E2EFF;
+  background-color: #5E2EFF;
+  color: white;
+  text-decoration: none;
+}
+
+.CTA_Button#second {
+  font-family: Muli;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 4px 20px;
+  border-style: solid;
+  border-radius: 80px;
+  border-color: white;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.CTA_Button:hover {
+  font-weight: bold;
+  background-color: #5624ff;
 }
 /*# sourceMappingURL=main.css.map */
