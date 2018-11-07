@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: Muli, sans-serif;
   font-size: 1.8vw;
 }
 
@@ -64,6 +64,40 @@ section {
   position: absolute;
   width: 8vw;
   padding: 3vw 0 0 38vw;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+}
+
+.header li {
+  display: inline-block;
+}
+
+.header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin: 30px 16px;
+  text-decoration: none;
+}
+
+.header li #header-button {
+  display: block;
+  color: black;
+  text-align: center;
+  margin: 22px 10px;
+  padding: 9px 20px;
+  text-decoration: none;
+  background-color: white;
+  border-style: solid;
+  border-color: orange;
+  border-radius: 100px;
 }
 
 footer {
