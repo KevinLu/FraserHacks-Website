@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/website/src/css/main.css">
     <title>Fraser Hacks 2019</title>
 </head>
 
 <body>
+    <div class="header" style="float:right">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><button id = "header-button" href="#apply">Apply</button></li>
+    </ul>
+    </div>
     <div class="container">
-        <section class="full-width full-viewport-height hero_section" id="hero_section">
-            <h1>Colorful curvy</h1>
-            <h1>Bezier shapes</h1>
+        <section class="full-width full-viewport-height hero_section snapscroll" id="hero_section">
+            <div id="hero_div">
+            <h1>Fraser Hacks</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
+                industry's standard dummy text ever since the 1500s.</p>        
+            <button class="CTA_Button" id="first" href="#2">Learn More</button>
+            <button class="CTA_Button" id="second">Other</button>
+            </div>
         </section>
-        <section class="full-width full-viewport-height info_section" id="info_section">
+        <section class="full-width full-viewport-height info_section snapscroll" id="info_section">
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna.</h3>
             <p>Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet
@@ -27,14 +39,14 @@
                 1Phasellus tempor faucibus faucibus. Sed eu mauris sem. Etiam et varius felis. Donec et libero vitae
                 mauris consectetur egestas. Fusce aliquet, augue non efficitur sodales</p>
         </section>
-        <section class="full-width full-viewport-height schedule_section" id="schedule_section">
+        <section class="full-width full-viewport-height schedule_section snapscroll" id="schedule_section">
             <h2>Event Schedule</h2>
 
         </section>
-        <section class="full-width full-viewport-height sponsor_section" id="sponsor_section">
+        <section class="full-width full-viewport-height sponsor_section snapscroll" id="sponsor_section">
             <h2>Sponsors</h2>
         </section>
-        <section class="full-width full-viewport-height faq_section" id="faq_section">
+        <section class="full-width full-viewport-height faq_section snapscroll" id="faq_section">
             <h2>Frequently Asked Questions</h2>
             <p>you might want to put these in divs...</p>
         </section>
@@ -42,6 +54,18 @@
 
         </footer>
     </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script
+    src="src/js/jquery.scrollify.js">
+    </script>
+
+    <script src="src/js/script.js"></script>
+
 </body>
 
 </html>
