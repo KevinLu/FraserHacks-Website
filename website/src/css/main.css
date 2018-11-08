@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 * {
   margin: 0;
   padding: 0;
@@ -17,138 +18,173 @@ body {
 }
 
 h1 {
-  font-family: Assistant, 700;
-  font-size: 9vw;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 8em;
+  width: 80%;
 }
 
 h2 {
-  font-size: 4vw;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 3vw;
-  font-weight: bold;
+  font-size: 3em;
+  font-weight: 800;
 }
 
 p {
   font-family: Muli, sans-serif;
-  font-size: 1.8vw;
+  font-size: 1.25em;
 }
 
 section {
-  padding: 3em;
-  height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.hero_section {
-  padding: 12em 9em;
+nav {
+  padding-top: 2em;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  margin-right: 2em;
+}
+
+nav a:first-child {
+  float: left;
+}
+
+nav a:last-child {
+  margin-left: 2em;
+}
+
+header {
+  padding-left: 10%;
+  padding-right: 10%;
   background-image: url("/assets/Hero/svgs/Path 3.svg");
-  background-repeat: no-repeat;
-  background-size: 102%;
+  background-repeat: none;
+  height: 100vh;
+  background-size: 103%;
 }
 
-.hero_section p {
+header h1 {
+  margin-top: 15%;
+}
+
+.info {
+  height: 90vh;
+}
+
+.info-title {
+  margin: 1.5em auto;
+  text-align: center;
+  width: 40%;
+}
+
+.info-text {
+  margin-top: 3em;
+  line-height: 1.7em;
+  display: block;
+  float: right;
+  width: 40%;
+}
+
+.schedule {
+  height: 90vh;
+}
+
+.sponsors {
+  height: 90vh;
+}
+
+.faq {
+  height: 90vh;
+}
+
+.hero-blurb {
   color: white;
-  width: 50%;
-  font-size: 1.15vw;
-  line-height: 1.6vw;
+  width: 40%;
   border-left: #FFA54A;
   border-style: solid;
-  padding: 0.1em 0.5em;
+  margin-top: 0em;
+  margin-bottom: 3em;
+  padding: 0 0em 0 1em;
   border-top: none;
   border-right: none;
   border-bottom: none;
 }
 
-.hero_section h1 {
-  color: white;
-  font-size: 6vw;
-  margin-left: -0.5vw;
-}
-
-.hero_circle_1 {
-  position: absolute;
-  width: 8vw;
-  padding: 3vw 0 0 38vw;
-}
-
-.header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  border-bottom-left-radius: 50px;
-}
-
-.header li {
+.button-solid-purple {
   display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.75em;
+  font-weight: 600;
+  background-color: #5E2EFF;
+  border-radius: 1000px;
+  line-height: 2em;
+  width: 8em;
+  height: 2em;
+  margin: 1em 0 0 0;
+  text-align: center;
 }
 
-.header li a {
-  display: block;
-  color: black;
-  text-align: center;
-  margin: 30px 16px;
+.button-solid-white {
+  display: inline-block;
   text-decoration: none;
-}
-
-.header li #header-button {
-  display: block;
-  color: black;
-  text-align: center;
-  margin: 22px 25px;
-  margin-right: 50px;
-  padding: 9px 20px;
-  text-decoration: none;
+  color: #434343;
+  font-size: 1.75em;
+  font-weight: 600;
   background-color: white;
-  border-style: solid;
-  border-color: orange;
-  border-radius: 100px;
+  border-radius: 1000px;
+  line-height: 2em;
+  width: 8em;
+  height: 2em;
+  margin: 1em 0 0 3em;
+  text-align: center;
+}
+
+.button-outline {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.75em;
+  font-weight: 600;
+  border: 2px solid #5E2EFF;
+  border-radius: 1000px;
+  line-height: 2em;
+  width: 8em;
+  height: 2em;
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+
+.button-apply {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  font-weight: 600;
+  border: 2px solid #FFA54A;
+  border-radius: 1000px;
+  line-height: 1.95em;
+  width: 6.5em;
+  height: 1.95em;
+  margin: 1em 0 0 0;
+  text-align: center;
 }
 
 footer {
   height: 45vh !important;
-  background-color: cornflowerblue;
   background-image: url("/assets/Footer/svgs/rocket.svg");
   background-repeat: no-repeat;
-  background-position-x: -5vw;
-  background-position-y: 4vw;
-}
-
-.CTA_Button {
-  font-family: Muli;
-  margin-right: 1vw;
-  margin-top: 2vw;
-  margin-bottom: 1vw;
-  padding: 6px 20px;
-  border-style: solid;
-  border-radius: 80px;
-  text-decoration: none;
-  font-size: 1.15vw;
-}
-
-.CTA_Button#first {
-  border-color: #5E2EFF;
-  background-color: #5E2EFF;
-  color: white;
-}
-
-.CTA_Button#second {
-  border-color: white;
-  background-color: white;
-  color: black;
-}
-
-.CTA_Button:hover {
-  font-weight: bold;
-  background-color: #5624ff;
-}
-
-#hero_div {
-  margin: auto;
+  background-position-x: -80px;
+  background-position-y: 80px;
 }
 /*# sourceMappingURL=main.css.map */
