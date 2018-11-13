@@ -64,13 +64,53 @@ nav a:last-child {
   margin-left: 2em;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+}
+
 header {
   padding-left: 10%;
   padding-right: 10%;
-  background-image: url("/assets/Hero/svgs/Path 3.svg");
+  background-image: url("/assets/Hero/svgs/Hero_Background.svg");
   background-repeat: none;
   height: 100vh;
   background-size: 103%;
+}
+
+.blue_rectangle {
+  position: absolute;
+  right: 0px;
+  top: 78vh;
+  overflow: hidden;
+}
+
+.red_hexagon {
+  position: absolute;
+  right: 0px;
+  top: 88vh;
+  overflow: hidden;
+}
+
+.small_yellow_circle {
+  position: absolute;
+  right: 120px;
+  top: 82vh;
+  overflow: hidden;
+}
+
+.yellow_circle {
+  position: absolute;
+  left: -100px;
+  top: 85vh;
+}
+
+.blue_circle {
+  position: absolute;
+  left: -260px;
+  top: 65vh;
 }
 
 header h1 {
@@ -180,11 +220,58 @@ header h1 {
   text-align: center;
 }
 
-footer {
-  height: 45vh !important;
-  background-image: url("/assets/Footer/svgs/rocket.svg");
-  background-repeat: no-repeat;
-  background-position-x: -80px;
-  background-position-y: 80px;
+.faqs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  margin: 0;
+  padding: 0;
+}
+
+.faq {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.faq-answer {
+  margin-bottom: 2.25rem;
+}
+
+.footer-image {
+  position: absolute;
+  width: 35em;
+  height: auto;
+}
+
+.footer-links {
+  position: relative;
+  float: right;
+  margin-bottom: 1em;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  margin-right: 2em;
+}
+
+.footer-links .social {
+  margin-right: 15vw;
+}
+
+.footer-links .important {
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
