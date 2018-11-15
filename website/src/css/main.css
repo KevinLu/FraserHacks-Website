@@ -7,6 +7,7 @@
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
+  overflow-x: hidden;
 }
 
 html {
@@ -71,13 +72,15 @@ img {
   border: 0;
 }
 
+.hero-background {
+  width: 100vw;
+  position: absolute;
+  z-index: -99;
+}
+
 header {
   padding-left: 10%;
   padding-right: 10%;
-  background-image: url("/assets/Hero/svgs/Hero_Background.svg");
-  background-repeat: none;
-  height: 100vh;
-  background-size: 103%;
 }
 
 .blue_rectangle {
@@ -114,21 +117,40 @@ header {
 }
 
 header h1 {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .info {
-  height: 90vh;
+  height: 100vh;
+  padding: 0 0 20% 0;
+}
+
+.yellow-dash {
+  position: absolute;
+  right: 0px;
+  bottom: -360px;
+}
+
+.purple-triangle {
+  position: absolute;
+}
+
+.purple-triangle-2 {
+  position: relative;
+  left: 50%;
+  padding-top: 25%;
 }
 
 .info-title {
-  margin: 1.5em auto;
+  padding: 15em 0 0 0;
+  margin: 0 auto;
   text-align: center;
   width: 40%;
+  position: relative;
 }
 
 .info-text {
-  margin-top: 3em;
+  margin-top: 8em;
   line-height: 1.7em;
   display: block;
   float: right;
@@ -137,6 +159,15 @@ header h1 {
 
 .schedule {
   height: 90vh;
+}
+
+.schedule h3 {
+  background-image: url("/assets/Schedule/SVGs/Path 503.svg");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: -10px;
+  background-position-y: 20px;
+  padding: 5% 0 5% 0;
 }
 
 .sponsors {
@@ -161,6 +192,8 @@ header h1 {
 }
 
 .button-solid-purple {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -248,6 +281,18 @@ header h1 {
   margin-bottom: 2.25rem;
 }
 
+footer {
+  background-image: url("/assets/Footer/svgs/rocket.svg");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: -100px;
+  padding: 5% 0 3% 15%;
+}
+
+footer p {
+  display: inline-block;
+}
+
 .footer-image {
   position: absolute;
   width: 35em;
@@ -255,20 +300,19 @@ header h1 {
 }
 
 .footer-links {
-  position: relative;
   float: right;
-  margin-bottom: 1em;
+  margin-right: 5%;
 }
 
 .footer-links a {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
-  margin-right: 2em;
+  margin-left: 2em;
 }
 
 .footer-links .social {
-  margin-right: 15vw;
+  margin-right: 30em;
 }
 
 .footer-links .important {
