@@ -1,11 +1,11 @@
-
 @import global
+@import loader
 @import url('https://fonts.googleapis.com/css?family=Muli')
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800')
 @import url('https://fonts.googleapis.com/css?family=Ubuntu')
 
 $custom-blue : #00DBDE
-$custom-orange: #FFA54A
+$custom-orange: #ff8000
 $custom-pink: #FC00FF
 $custom-green: #FC00FF
 $better-blue: #8594f6
@@ -29,10 +29,12 @@ section
     margin-right: 5%
 
 nav
-    padding-top: 2em
+    margin-top: 3em
     text-align: right
 
 nav a
+    vertical-align: middle
+    display: inline-block
     text-decoration: none
     color: black
     font-size: $nav-text
@@ -56,12 +58,101 @@ img
     z-index: -99
 
 header
+    position: relative
+    z-index: 99
     padding-left: 10%
-    padding-right: 10%
-    // background-image: url('/assets/Hero/svgs/Hero_Background.svg')
-    // background-repeat: none
-    // background-size: 100%
+    padding-right: 8%
+    margin: 0 0 0 0
+    // background: url('/assets/Hero/svgs/Hero_Background.svg') no-repeat center center fixed
+    // background-size: cover
     // height: 100vh
+    // min-height: 100%
+    // needs latest Compass, add '@import "compass"' to your scss
+    //background-color: #8b6bff
+    // background-color: #21D4FD
+    // background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)
+    // -webkit-clip-path: polygon(56% 0, 71% 12%, 86% 15%, 100% 16%, 100% 100%, 0 100%, 0 0)
+    // clip-path: polygon(56% 0, 71% 12%, 86% 15%, 100% 16%, 100% 100%, 0 100%, 0 0)
+    // background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg')ss
+
+.bg-1
+    top: 0
+    left: 0
+    position: absolute
+    z-index: -98
+    background-color: #21D4FD
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)
+    -webkit-clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0)
+    clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0)
+    height: 100vh
+    width: 100vw
+
+.center
+    text-align: center
+    display: flex
+    justify-content: center
+
+.styledinput
+    margin: 8vh 0 0 0
+    white-space: nowrap
+
+    label
+        display: block
+        margin-bottom: 15px
+        color: white
+        font-size: 1em
+
+        .subsubtitle
+            font-size: 0.5em
+
+    div
+        transition: 0.2s
+        height: inherit
+
+    input
+        padding: .85em 1.5em
+        border-radius: 2em
+        width: 30em
+        letter-spacing: .3px
+        height: 100%
+        line-height: normal
+        border: 1px solid #d3d3d3
+    
+    button
+        transition: .1s
+        border: 1px solid #E44DFF
+        padding: 1em 1.5em
+        border-radius: 2em
+        margin-left: -4em
+        font-weight: 500
+        letter-spacing: .3px
+        height: 100%
+        background-color: #E44DFF
+        color: #fff
+        user-select: none
+        cursor: pointer
+        overflow: visible
+        text-transform: none
+    
+    button:active, button:hover
+        border: 1px solid #D616F7
+        color: #fff
+        background-color: #D616F7
+
+form, iframe, noscript
+    margin: 0 0 1.45rem
+    padding: 0
+    outline: 0
+
+// .bg-2
+//     top: 0
+//     left: 0
+//     position: absolute
+//     z-index: -98
+//     background-color: #8EC5FC
+//     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)
+//     height: 100vh
+//     width: 100vw
 
 .blue_rectangle
     position: absolute
@@ -95,7 +186,7 @@ header h1
     margin-top: 10%
 
 .info
-    height: 100vh
+    margin-top: 20vh
     padding: 0 0 20% 0
 
 .yellow-dash
@@ -112,7 +203,7 @@ header h1
     padding-top: 25%
 
 .info-title
-    padding: 15em 0 0 0
+    padding: 0em 0 0 0
     margin: 0 auto
     text-align: center
     width: 40%
@@ -126,8 +217,6 @@ header h1
     width: 40%
 
 .schedule
-    height: 90vh
-
     h3
         background-image: url('/assets/Schedule/SVGs/Path 503.svg')
         background-repeat: no-repeat
@@ -137,10 +226,41 @@ header h1
         padding: 5% 0 5% 0
 
 .sponsors
-    height: 90vh
 
-.faq
-    height: 90vh
+.sponsors__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 20px 0
+
+.sponsors__gold
+    flex-direction: column
+    align-items: center
+
+.gold
+    margin: 0 35px
+    height: 225px
+
+    img
+        height: 100%
+
+.sponsors__silver
+    flex-direction: column
+    align-items: center
+
+.silver
+    margin: 0 30px 30px
+    height: 135px
+
+    img
+        height: 100%
+
+img
+    border-style: none
+
+.sponsor-image
+    opacity: 1
+    transition: opacity .2s ease
 
 .hero-blurb
     color: white
@@ -153,7 +273,7 @@ header h1
     border-top: none
     border-right: none
     border-bottom: none
-
+    
 .button-solid-purple
     position: relative
     z-index: 1
@@ -199,6 +319,7 @@ header h1
     text-align: center
 
 .button-apply
+    vertical-align: middle
     display: inline-block
     text-decoration: none
     color: black
@@ -209,10 +330,10 @@ header h1
     line-height: $nav-text*1.5
     width: $nav-text*5
     height: $nav-text*1.5
-    margin: 1em 0 0 0
     text-align: center
 
 .faqs
+    margin-top: 2em
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -224,6 +345,10 @@ header h1
 
 .faq
     box-sizing: inherit
+
+.faq-qa
+    h4
+        margin-bottom: 0.75em
 
 .faq-answer
     margin-bottom: 2.25rem
@@ -258,3 +383,10 @@ footer
 
     .important
         font-weight: 600
+
+#insta
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+  -webkit-background-clip: text
+          /* Also define standard property for compatibility */
+          background-clip: text
+  -webkit-text-fill-color: transparent

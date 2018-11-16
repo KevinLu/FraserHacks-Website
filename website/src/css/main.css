@@ -12,10 +12,15 @@
 
 html {
   font-family: Muli;
+  width: 100%;
 }
 
 body {
   width: 100%;
+}
+
+a {
+  color: #35b1ff;
 }
 
 h1 {
@@ -40,17 +45,106 @@ p {
   font-size: 1.25em;
 }
 
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999;
+  overflow: hidden;
+}
+
+.load {
+  position: relative;
+  margin: 45vh auto;
+  width: 120px;
+  height: 180px;
+}
+
+.gear {
+  position: absolute;
+  z-index: -10;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 5s infinite;
+          animation: spin 5s infinite;
+  overflow: hidden;
+}
+
+.two {
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin-reverse 5s infinite;
+          animation: spin-reverse 5s infinite;
+}
+
+.three {
+  top: 45px;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+}
+
+@-webkit-keyframes spin {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-reverse {
+  50% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  50% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.lil-circle {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 10px 2px gray, 0 0 50px white;
+          box-shadow: inset 0 0 10px 2px gray, 0 0 50px white;
+  width: 100px;
+  height: 100px;
+  opacity: .65;
+}
+
+.blur-circle {
+  position: absolute;
+  top: -19px;
+  left: -19px;
+}
+
 section {
   margin-left: 5%;
   margin-right: 5%;
 }
 
 nav {
-  padding-top: 2em;
+  margin-top: 3em;
   text-align: right;
 }
 
 nav a {
+  vertical-align: middle;
+  display: inline-block;
   text-decoration: none;
   color: black;
   font-size: 1.3em;
@@ -79,8 +173,99 @@ img {
 }
 
 header {
+  position: relative;
+  z-index: 99;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 8%;
+  margin: 0 0 0 0;
+}
+
+.bg-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -98;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  -webkit-clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0);
+  height: 100vh;
+  width: 100vw;
+}
+
+.center {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.styledinput {
+  margin: 8vh 0 0 0;
+  white-space: nowrap;
+}
+
+.styledinput label {
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 1em;
+}
+
+.styledinput label .subsubtitle {
+  font-size: 0.5em;
+}
+
+.styledinput div {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: inherit;
+}
+
+.styledinput input {
+  padding: .85em 1.5em;
+  border-radius: 2em;
+  width: 30em;
+  letter-spacing: .3px;
+  height: 100%;
+  line-height: normal;
+  border: 1px solid #d3d3d3;
+}
+
+.styledinput button {
+  -webkit-transition: .1s;
+  transition: .1s;
+  border: 1px solid #E44DFF;
+  padding: 1em 1.5em;
+  border-radius: 2em;
+  margin-left: -4em;
+  font-weight: 500;
+  letter-spacing: .3px;
+  height: 100%;
+  background-color: #E44DFF;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+}
+
+.styledinput button:active, .styledinput button:hover {
+  border: 1px solid #D616F7;
+  color: #fff;
+  background-color: #D616F7;
+}
+
+form, iframe, noscript {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  outline: 0;
 }
 
 .blue_rectangle {
@@ -121,7 +306,7 @@ header h1 {
 }
 
 .info {
-  height: 100vh;
+  margin-top: 20vh;
   padding: 0 0 20% 0;
 }
 
@@ -142,7 +327,7 @@ header h1 {
 }
 
 .info-title {
-  padding: 15em 0 0 0;
+  padding: 0em 0 0 0;
   margin: 0 auto;
   text-align: center;
   width: 40%;
@@ -157,10 +342,6 @@ header h1 {
   width: 40%;
 }
 
-.schedule {
-  height: 90vh;
-}
-
 .schedule h3 {
   background-image: url("/assets/Schedule/SVGs/Path 503.svg");
   background-repeat: no-repeat;
@@ -170,12 +351,64 @@ header h1 {
   padding: 5% 0 5% 0;
 }
 
-.sponsors {
-  height: 90vh;
+.sponsors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
 }
 
-.faq {
-  height: 90vh;
+.sponsors__gold {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gold {
+  margin: 0 35px;
+  height: 225px;
+}
+
+.gold img {
+  height: 100%;
+}
+
+.sponsors__silver {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.silver {
+  margin: 0 30px 30px;
+  height: 135px;
+}
+
+.silver img {
+  height: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+.sponsor-image {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
 }
 
 .hero-blurb {
@@ -239,21 +472,22 @@ header h1 {
 }
 
 .button-apply {
+  vertical-align: middle;
   display: inline-block;
   text-decoration: none;
   color: black;
   font-size: 1.3em;
   font-weight: 600;
-  border: 2px solid #FFA54A;
+  border: 2px solid #ff8000;
   border-radius: 1000px;
   line-height: 1.95em;
   width: 6.5em;
   height: 1.95em;
-  margin: 1em 0 0 0;
   text-align: center;
 }
 
 .faqs {
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,6 +509,10 @@ header h1 {
 .faq {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+.faq-qa h4 {
+  margin-bottom: 0.75em;
 }
 
 .faq-answer {
@@ -317,5 +555,13 @@ footer p {
 
 .footer-links .important {
   font-weight: 600;
+}
+
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  -webkit-background-clip-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
