@@ -16,69 +16,100 @@
     <title>FraserHacks 2019</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="src/js/dist/perfect-scrollbar.js"></script>
+    <script src="src/js/jquery.drawsvg.js"></script>
 </head>
 
 <body>
-    <!-- <div class="spinner-wrapper">
-         <div class="load">
-             <div class="gear one"><svg id="blue" viewbox="0 0 100 100" fill="#94DDFF">
-                     <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
-                 </svg></div>
-             <div class="gear two"><svg id="pink" viewbox="0 0 100 100" fill="#FB8BB9">
-                     <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
-                 </svg></div>
-             <div class="gear three"><svg id="yellow" viewbox="0 0 100 100" fill="#FFCD5C">
-                     <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
-                 </svg></div>
-             <div class="lil-circle"></div><svg class="blur-circle">
-                 <filter id="blur">
-                     <fegaussianblur in="SourceGraphic" stddeviation="13"></fegaussianblur>
-                 </filter>
-                 <circle cx="70" cy="70" r="66" fill="transparent" stroke="white" stroke-width="40" filter="url(#blur)"></circle>
-             </svg>
-         </div>
-         </div> -->
+    <div class="spinner-wrapper">
+        <div class="load">
+            <div class="gear one"><svg id="blue" viewbox="0 0 100 100" fill="#94DDFF">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg></div>
+            <div class="gear two"><svg id="pink" viewbox="0 0 100 100" fill="#FB8BB9">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg></div>
+            <div class="gear three"><svg id="yellow" viewbox="0 0 100 100" fill="#FFCD5C">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg></div>
+            <div class="lil-circle"></div><svg class="blur-circle">
+                <filter id="blur">
+                    <fegaussianblur in="SourceGraphic" stddeviation="13"></fegaussianblur>
+                </filter>
+                <circle cx="70" cy="70" r="66" fill="transparent" stroke="white" stroke-width="40" filter="url(#blur)"></circle>
+            </svg>
+        </div>
+    </div>
     <div id="fullpage" class="fullpage">
-        <!-- <img src="assets/Hero/svgs/Hero_Background.svg" class="hero-background"> -->
-        <div class="bg-2"></div>
-        <div class="bg-1"></div>
-        <header>
-            <nav>
-                <a href="#" class="logo"><img src="assets/Hero/svgs/baseline_explore_white_18dp.png" alt="FraserHacks Logo"></a>
-                <a href="#about">About</a>
-                <a href="#schedule">Schedule</a>
-                <a href="#sponsors">Sponsors</a>
-                <a href="#faq">FAQ</a>
-                <a href="#" class="button-apply">Apply</a>
-            </nav>
-            <h1>Colorful curvy bezier shapes</h1>
-            <p class="hero-blurb">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum
-                has been the industry's standard dummy text ever since the 1500s.
-            </p>
-            <a href="#about" class="button-solid-purple">Learn More</a>
-            <a href="#" class="button-solid-white">Devpost</a>
-            <div class="center">
-                <form class="styledinput">
-                    <label for="signup" class="subsubtitle">
-                        <span class="label">Sign up for our
-                            mailing list to be the first to know about important updates.</span>
-                        <div class="null emailinput">
-                            <div><input id="signup" type="email" placeholder="Enter your email address" value=""><button
-                                    type="submit">Submit</button></div>
-                        </div>
-                    </label>
-                    <p></p>
-                </form>
-            </div>
-            <!-- <img class="blue_rectangle" src="assets/Hero/pngs/Rectangle 12.png">
+        <div class="hero-add-bg">
+            <header class="container">
+                <img id="fraserhacks-logo" src="assets/Hero/svgs/baseline_explore_white_18dp.png" alt="FraserHacks Logo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#schedule">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#sponsors">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button-apply">Apply</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <img class="blue_rectangle" src="assets/Hero/pngs/Rectangle 12.png">
                <img class="red_hexagon" src="assets/Hero/pngs/Path 4.png">
                <img class="small_yellow_circle" src="assets/Hero/pngs/Ellipse 8.png">
                <img class="yellow_circle" src="assets/Hero/pngs/Ellipse 6.png">
+
                <img class="blue_circle" src="assets/Hero/pngs/Ellipse 7.png"> -->
-        </header>
-        <section class="info" id="about">
+            </header>
+            <main class="container">
+                <section class="hero container">
+                    <h1>Colorful</h1>
+                    <div class="blurb">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum
+                            has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                    <a href="#about" class="button-solid-purple">Learn More</a>
+                    <a href="#" class="button-solid-white">Devpost</a>
+                    <form class="styledinput">
+                        <label for="signup" class="subsubtitle">
+                            <span class="label">Sign up for our
+                                mailing list to be the first to know about important updates.</span>
+                            <div class="null emailinput">
+                                <div><input id="signup" type="email" placeholder="Enter your email address" value=""><button
+                                        type="submit">Submit</button></div>
+                            </div>
+                        </label>
+                        <p></p>
+                    </form>
+                </section>
+                <div class="hero-image">
+                    <figure>
+                        <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 280.57">
+                            <title>html-coding</title>
+                            <path d="M156.68,364.88,0,279.43V232.11l156.68-85v55.59L47.5,255.18,156.68,309.6Z"
+                                transform="translate(1.5 -115.72)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                stroke-width="3" />
+                            <path d="M183.44,394.78l103.9-277.56h32.83L216,394.78Z" transform="translate(1.5 -115.72)"
+                                fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+                            <path d="M355.32,364.88V309.6l109.16-54L355.32,202.05V147.12L512,232.19v47Z" transform="translate(1.5 -115.72)"
+                                fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+                        </svg>
+                    </figure>
+                </div>
+            </main>
+        </div>
+        <section class="info container" id="about">
             <h2 class="info-title">Mississauga's biggest hackathon is here.</h2>
             <p class="info-text">FraserHacks is Mississauga's largest high school hackathon organized entirely by
                 students
@@ -90,10 +121,10 @@
                <img class="purple-triangle" src="assets/Info/pngs/Path 504.png">
                <img class="purple-triangle-2" src="assets/Info/pngs/Path 5055.png"> -->
         </section>
-        <section class="schedule" id="schedule">
+        <section class="schedule container" id="schedule">
             <h3>Event Schedule</h3>
         </section>
-        <section class="sponsors" id="sponsors">
+        <section class="sponsors container" id="sponsors">
             <h3>Sponsors</h3>
             <div class="sponsors__list sponsors__gold">
                 <a href="https://www.jetbrains.com/" class="gold" target="_blank">
@@ -109,7 +140,7 @@
                 </a>
             </div>
         </section>
-        <section class="faq" id="faq">
+        <section class="faq container" id="faq">
             <h3>Frequently Asked Questions</h3>
             <div class="faqs">
                 <div class="faq-section">
@@ -247,6 +278,13 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        var $svg = $('svg').drawsvg({
+            duration: 2000,
+            stagger: 500
+        });
+        $svg.drawsvg('animate');
+    </script>
     <script>
         $(document).ready(function () {
             //Preloader

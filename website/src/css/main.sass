@@ -1,5 +1,6 @@
 @import global
 @import loader
+// @import responsive
 @import url('https://fonts.googleapis.com/css?family=Muli')
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800')
 @import url('https://fonts.googleapis.com/css?family=Ubuntu')
@@ -23,83 +24,106 @@ $social-width: 20%
 //FONT SIZES PLEASE USE THESE INSTEAD OF VW
 $hero-h1: 25em
 $nav-text: 1.3em
-
-section
-    margin-left: 5%
-    margin-right: 5%
-
-nav
-    margin-top: 3em
-    text-align: right
-
-nav a
-    vertical-align: middle
-    display: inline-block
-    text-decoration: none
-    color: black
-    font-size: $nav-text
-    margin-right: 2em
-
-nav a:first-child
-    float: left
-
-nav a:last-child
-    margin-left: 2em
+    
+#fraserhacks-logo
+    width: 120px
 
 img
     max-width: 100%
     vertical-align: middle
     display: inline-block
-    border: 0
-
-.hero-background
-    width: 100vw
-    position: absolute
-    z-index: -99
-
-header
-    position: relative
-    z-index: 99
-    padding-left: 10%
-    padding-right: 8%
-    margin: 0 0 0 0
-    // background: url('/assets/Hero/svgs/Hero_Background.svg') no-repeat center center fixed
-    // background-size: cover
-    // height: 100vh
-    // min-height: 100%
-    // needs latest Compass, add '@import "compass"' to your scss
-    //background-color: #8b6bff
-    // background-color: #21D4FD
-    // background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)
-    // -webkit-clip-path: polygon(56% 0, 71% 12%, 86% 15%, 100% 16%, 100% 100%, 0 100%, 0 0)
-    // clip-path: polygon(56% 0, 71% 12%, 86% 15%, 100% 16%, 100% 100%, 0 100%, 0 0)
-    // background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg')ss
-
-.bg-1
-    top: 0
-    left: 0
-    position: absolute
-    z-index: -98
-    background-color: #21D4FD
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)
-    -webkit-clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0)
-    clip-path: polygon(48% 0, 52% 10%, 58% 14%, 76% 13%, 87% 18%, 100% 13%, 100% 100%, 0 100%, 0 0)
-    height: 100vh
-    width: 100vw
+    border-style: none
 
 .center
     text-align: center
     display: flex
     justify-content: center
 
+.container
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    max-width: 1120px
+
+header
+    text-align: center
+
+main
+    display: flex
+    flex-flow: column
+
+.hero-add-bg
+    background-color: #8EC5FC //fallback
+    background-image: url('/assets/Hero/pngs/blobs.png') //fallback
+
+    background-image: url('/assets/Hero/pngs/blobs.png'), linear-gradient(180deg, #68b3fa 0%, #c184f6 50%, #ffffff 100%)
+
+
+    background-repeat: no-repeat
+    background-position: right top
+
+// section
+//     margin-left: 5%
+//     margin-right: 5%
+
+nav
+    margin: 2em auto 0
+    max-width: 800px
+
+    ul
+        margin: 0
+        padding: 0
+        display: flex
+        justify-content: space-between
+
+        li
+            list-style: none
+
+            a
+                font-size: 1.25em
+                color: white
+                font-weight: 700
+                text-decoration: none
+
+.hero
+    text-align: center
+    padding-bottom: 10em
+
+    .blurb
+        font-size: 1em
+        font-weight: 400
+        max-width: 1000px
+        line-height: 1.5em
+        margin: 1em auto
+        color: white
+    
+    .blurb:before
+        content: ""
+        display: block
+        width: 120px
+        border: 2px solid $custom-orange
+        margin: 1em auto
+
+figure
+    text-align: center
+
+    img
+        margin: 3em auto 0
+        width: 300px
+
+.hero-image
+    margin-top: 0em
+    display: none
+
 .styledinput
-    margin: 8vh 0 0 0
-    white-space: nowrap
+    width: 35em
+    margin: 6em 0 0 0
+    //white-space: nowrap
 
     label
         display: block
         margin-bottom: 15px
-        color: white
+        color: #333333
         font-size: 1em
 
         .subsubtitle
@@ -112,7 +136,7 @@ header
     input
         padding: .85em 1.5em
         border-radius: 2em
-        width: 30em
+        width: 10em
         letter-spacing: .3px
         height: 100%
         line-height: normal
@@ -137,7 +161,7 @@ header
     button:active, button:hover
         border: 1px solid #D616F7
         color: #fff
-        background-color: #D616F7
+        background-color: #D616F7   
 
 form, iframe, noscript
     margin: 0 0 1.45rem
@@ -154,53 +178,50 @@ form, iframe, noscript
 //     height: 100vh
 //     width: 100vw
 
-.blue_rectangle
-    position: absolute
-    right: 0px
-    top: 78vh
-    overflow: hidden
+// .blue_rectangle
+//     position: absolute
+//     right: 0px
+//     top: 78vh
+//     overflow: hidden
 
-.red_hexagon
-    position: absolute
-    right: 0px
-    top: 88vh
-    overflow: hidden
+// .red_hexagon
+//     position: absolute
+//     right: 0px
+//     top: 88vh
+//     overflow: hidden
 
-.small_yellow_circle
-    position: absolute
-    right: 120px
-    top: 82vh
-    overflow: hidden
+// .small_yellow_circle
+//     position: absolute
+//     right: 120px
+//     top: 82vh
+//     overflow: hidden
 
-.yellow_circle
-    position: absolute
-    left: -100px
-    top: 85vh
+// .yellow_circle
+//     position: absolute
+//     left: -100px
+//     top: 85vh
 
-.blue_circle
-    position: absolute
-    left: -260px
-    top: 65vh
-    
-header h1
-    margin-top: 10%
+// .blue_circle
+//     position: absolute
+//     left: -260px
+//     top: 65vh
+
+// .yellow-dash
+//     position: absolute
+//     right: 0px
+//     bottom: -360px
+
+// .purple-triangle
+//     position: absolute
+
+// .purple-triangle-2
+//     position: relative
+//     left: 50%
+//     padding-top: 25%
 
 .info
-    margin-top: 20vh
-    padding: 0 0 20% 0
-
-.yellow-dash
-    position: absolute
-    right: 0px
-    bottom: -360px
-
-.purple-triangle
-    position: absolute
-
-.purple-triangle-2
-    position: relative
-    left: 50%
-    padding-top: 25%
+    margin-top: 10em
+    //padding: 0 0 20% 0
 
 .info-title
     padding: 0em 0 0 0
@@ -255,24 +276,12 @@ header h1
     img
         height: 100%
 
-img
-    border-style: none
-
 .sponsor-image
     opacity: 1
     transition: opacity .2s ease
 
-.hero-blurb
-    color: white
-    width: 40%
-    border-left: #FFA54A
-    border-style: solid
-    margin-top: 0em
-    margin-bottom: 3em
-    padding: 0 0em 0 1em
-    border-top: none
-    border-right: none
-    border-bottom: none
+.sponsor-image:hover
+    opacity: .8
     
 .button-solid-purple
     position: relative
@@ -280,12 +289,12 @@ img
     display: inline-block
     text-decoration: none
     color: white
-    font-size: 1.75em
+    font-size: 1.2em
     font-weight: 600
     background-color: $button-purple
     border-radius: 1000px
     line-height: 2em
-    width: 8em
+    width: 7em
     height: 2em
     margin: 1em 0 0 0
     text-align: center
@@ -294,43 +303,44 @@ img
     display: inline-block
     text-decoration: none
     color: $dark-grey
-    font-size: 1.75em
+    font-size: 1.2em
     font-weight: 600
     background-color: white
     border-radius: 1000px
     line-height: 2em
-    width: 8em
+    width: 7em
     height: 2em
     margin: 1em 0 0 3em
     text-align: center
 
-.button-outline
-    display: inline-block
-    text-decoration: none
-    color: white
-    font-size: 1.75em
-    font-weight: 600
-    border: 2px solid $button-purple
-    border-radius: 1000px
-    line-height: 2em
-    width: 8em
-    height: 2em
-    margin: 1em 0 0 0
-    text-align: center
+// .button-outline
+//     display: inline-block
+//     text-decoration: none
+//     color: white
+//     font-size: 1.75em
+//     font-weight: 600
+//     border: 2px solid $button-purple
+//     border-radius: 1000px
+//     line-height: 2em
+//     width: 8em
+//     height: 2em
+//     margin: 1em 0 0 0
+//     text-align: center
 
 .button-apply
-    vertical-align: middle
-    display: inline-block
-    text-decoration: none
-    color: black
-    font-size: $nav-text
-    font-weight: 600
-    border: 2px solid $custom-orange
-    border-radius: 1000px
-    line-height: $nav-text*1.5
-    width: $nav-text*5
-    height: $nav-text*1.5
-    text-align: center
+    border-bottom: 3px solid $button-purple
+    // vertical-align: middle
+    // display: inline-block
+    // text-decoration: none
+    color: $button-purple
+    // font-size: $nav-text
+    font-weight: 800
+    // border: 2px solid $button-purple
+    // border-radius: 1000px
+    // line-height: $nav-text*1.5
+    // width: $nav-text*5
+    // height: $nav-text*1.5
+    // text-align: center
 
 .faqs
     margin-top: 2em
@@ -390,3 +400,353 @@ footer
           /* Also define standard property for compatibility */
           background-clip: text
   -webkit-text-fill-color: transparent
+
+@media screen and (min-width: 1450px)
+    .container
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        max-width: 1360px
+        
+    header
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+        align-items: center
+
+    nav
+        margin: 0
+        //right: 0
+
+        ul
+            margin: 0
+            padding: 0
+            display: flex
+
+            li
+                //list-style-type: none
+                list-style: none
+                padding: 0.5em 2em
+
+                a
+                    font-size: 1.375em
+                    color: white
+                    font-weight: 700
+                    text-decoration: none
+
+    .styledinput
+        input
+            width: 29em
+            white-space: nowrap !important
+
+    main
+        flex-flow: row
+
+    .hero-image
+        margin-top: 10em
+        padding-left: 15em
+        display: inline-block
+
+    .hero
+        padding-top: 10em
+        text-align: left
+
+        h1
+            font-size: 8em
+
+        .blurb
+            font-size: 1.2em
+            font-weight: 400
+            max-width: 1000px
+            line-height: 1.5em
+            margin: 1em auto
+            color: white
+        
+        .blurb:before
+            content: ""
+            display: block
+            width: 120px
+            border: 2px solid $custom-orange
+            margin: 1em 0 1em 0
+
+    .button-solid-purple
+        position: relative
+        z-index: 1
+        display: inline-block
+        text-decoration: none
+        color: white
+        font-size: 1.5em
+        font-weight: 600
+        background-color: $button-purple
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 0
+        text-align: center
+
+    .button-solid-white
+        display: inline-block
+        text-decoration: none
+        color: $dark-grey
+        font-size: 1.5em
+        font-weight: 600
+        background-color: white
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 3em
+        text-align: center
+
+@media screen and (min-width: 1060px) and (max-width: 1449px)
+    // *
+    //     overflow-x: hidden
+
+    .container
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        max-width: 1000px
+        
+    header
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+        align-items: center
+
+    nav
+        margin: 0
+        //right: 0
+
+        ul
+            margin: 0
+            padding: 0
+            display: flex
+
+            li
+                //list-style-type: none
+                list-style: none
+                padding: 0.5em 2em
+
+                a
+                    font-size: 1.375em
+                    color: white
+                    font-weight: 700
+                    text-decoration: none
+
+    .styledinput
+        input
+            width: 23em
+            white-space: nowrap
+
+    main
+        flex-flow: row
+
+    .hero-image
+        margin-top: 12em
+        display: inherit
+
+    .hero
+        padding-top: 10em
+        text-align: left
+
+        h1
+            font-size: 8em
+
+        .blurb
+            font-size: 1.2em
+            font-weight: 400
+            max-width: 1000px
+            line-height: 1.5em
+            margin: 1em auto
+            color: white
+        
+        .blurb:before
+            content: ""
+            display: block
+            width: 120px
+            border: 2px solid $custom-orange
+            margin: 1em 0 1em 0
+
+    .button-solid-purple
+        position: relative
+        z-index: 1
+        display: inline-block
+        text-decoration: none
+        color: white
+        font-size: 1.5em
+        font-weight: 600
+        background-color: $button-purple
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 0
+        text-align: center
+
+    .button-solid-white
+        display: inline-block
+        text-decoration: none
+        color: $dark-grey
+        font-size: 1.5em
+        font-weight: 600
+        background-color: white
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 3em
+        text-align: center
+
+@media screen and (min-width: 800px) and (max-width: 1059px)
+    *
+        overflow-x: hidden
+    
+    .container
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        max-width: 800px
+        padding-left: 30px
+        padding-right: 30px
+        
+    header
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+        align-items: center
+
+    nav
+        margin: 0
+        //right: 0
+
+        ul
+            margin: 0
+            padding: 0
+            display: flex
+
+            li
+                //list-style-type: none
+                list-style: none
+                padding: 0.5em 2em
+
+                a
+                    font-size: 1.375em
+                    color: white
+                    font-weight: 700
+                    text-decoration: none
+
+    .styledinput
+        width: 40em
+        input
+            width: 30em
+            white-space: nowrap
+
+    main
+        flex-flow: row
+
+    .hero
+        padding-top: 2em
+        text-align: left
+
+        h1
+            font-size: 8em
+
+        .blurb
+            font-size: 1.2em
+            font-weight: 400
+            max-width: 1000px
+            line-height: 1.5em
+            margin: 1em auto
+            color: white
+        
+        .blurb:before
+            content: ""
+            display: block
+            width: 120px
+            border: 2px solid $custom-orange
+            margin: 1em 0 1em 0
+
+    .button-solid-purple
+        position: relative
+        z-index: 1
+        display: inline-block
+        text-decoration: none
+        color: white
+        font-size: 1.5em
+        font-weight: 600
+        background-color: $button-purple
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 0
+        text-align: center
+
+    .button-solid-white
+        display: inline-block
+        text-decoration: none
+        color: $dark-grey
+        font-size: 1.5em
+        font-weight: 600
+        background-color: white
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 3em
+        text-align: center
+
+@media screen and (min-width: 510px) and (max-width: 799px)
+    .styledinput
+        margin: 6em auto
+        width: 30em
+        input
+            width: 20em
+            //white-space: normal
+
+    .button-solid-purple
+        position: relative
+        z-index: 1
+        display: inline-block
+        text-decoration: none
+        color: white
+        font-size: 1.5em
+        font-weight: 600
+        background-color: $button-purple
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 0
+        text-align: center
+
+    .button-solid-white
+        display: inline-block
+        text-decoration: none
+        color: $dark-grey
+        font-size: 1.5em
+        font-weight: 600
+        background-color: white
+        border-radius: 1000px
+        line-height: 2.5em
+        width: 8em
+        height: 2.5em
+        margin: 1em 0 0 3em
+        text-align: center
+
+@media screen and (min-width: 430px) and (max-width: 509px)
+    .styledinput
+        margin: 6em auto
+        word-wrap: break-word
+        width: 25em
+        input
+            width: 15em
+
+    .hero
+        h1
+            font-size: 6em
+
+        .blurb
+            font-size: 1em
