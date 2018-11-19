@@ -26,7 +26,8 @@ $hero-h1: 25em
 $nav-text: 1.3em
     
 #fraserhacks-logo
-    width: 120px
+    margin-top: 1em
+    width: 200px
 
 img
     max-width: 100%
@@ -44,6 +45,14 @@ img
     margin-right: auto
     width: 100%
     max-width: 1120px
+
+.container-wrapper
+    //padding-top: 52px
+    //padding-bottom: 50px
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
 
 header
     text-align: center
@@ -86,6 +95,9 @@ nav
                 text-decoration: none
 
 .hero
+    //display: flex
+    //justify-content: space-between
+    //flex-wrap: nowrap
     text-align: center
     padding-bottom: 10em
 
@@ -104,12 +116,12 @@ nav
         border: 2px solid $custom-orange
         margin: 1em auto
 
-figure
-    text-align: center
+// figure
+//     text-align: center
 
-    img
-        margin: 3em auto 0
-        width: 300px
+//     svg
+//         margin: 3em auto 0
+//         width: 500px
 
 .hero-image
     margin-top: 0em
@@ -167,6 +179,39 @@ form, iframe, noscript
     margin: 0 0 1.45rem
     padding: 0
     outline: 0
+
+@keyframes comeIn
+    from
+        transform: translate3d(0, -30px, 0)
+    to
+        transform: translate3d(0, 0, 0)
+
+.hero-image
+    width: 500px
+    height: 500px
+    position: relative
+    margin: auto
+
+.item
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    visibility: hidden
+    svg.drawsvg-initialized
+            visibility: visible
+    
+    -webkit-transition: .6s
+            transition: .6s
+    opacity: 0
+    top: 30px
+
+.active
+    top: 0
+    opacity: 1
+    -webkit-animation: comeIn .6s
+            animation: comeIn .6s
 
 // .bg-2
 //     top: 0
