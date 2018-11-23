@@ -1,0 +1,204 @@
+@import "_global";
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:700');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+.container {
+    width: 257px;
+    margin: 0 auto;
+}
+
+.about-container {
+    //max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.hero {
+    background-image: url('/assets/Hero/bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #hero-logo {
+        position: relative;
+        height: 33.33333vh;
+        max-width: 75vw;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        font-family: 'Chakra Petch', sans-serif;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    h3 {
+        margin-top: 1em;
+        font-family: 'Muli', sans-serif;
+        color: white;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2em;
+        margin-top: 0em;
+    }
+    a {
+        margin-top: 3em;
+        font-family: 'Muli', sans-serif;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        padding: 14px 28px;
+        font-size: 1.2em;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+
+.about {
+    font-family: 'Muli', sans-serif; //display: flex;
+    p {
+        margin-top: 2em;
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #dfdfdf;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+        height: 0;
+    }
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .about-blurb {
+        h1 {
+            font-size: 2em;
+            font-weight: 400;
+        }
+        align-items: center;
+        justify-content: center;
+        margin: 5em auto;
+        text-align: center;
+    }
+    .left {
+        order: 1; //background: #3d0000;
+        flex-basis: 100%;
+        height: 100%
+    }
+    .right {
+        order: 2; //background: #6d6d00;
+        flex-basis: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 476px) {
+    .container {
+        width: 450px;
+    }
+    .hero-content {
+        h2 {
+            font-size: 4em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        a {
+            font-size: 1.5em;
+        }
+    }
+    .about {
+        p {
+            font-size: 1.25em;
+        }
+    }
+     // .about-container {
+    //     flex-wrap: nowrap;
+    // }
+    // .about {
+    //     .map-responsive {
+    //         padding-bottom: 56.25%;
+    //     }
+    //     .map-responsive iframe {
+    //         width: 90%;
+    //     }
+    // }
+    .left {
+        flex-basis: 200px;
+        order: 1;
+    }
+    .right {
+        flex-basis: 200px;
+        order: 2;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .container {
+        width: 800px;
+    }
+    .about-container {
+        flex-wrap: nowrap;
+    }
+    .about {
+        p {
+            text-align: left;
+        }
+        .map-responsive {
+            padding-bottom: 56.25%;
+        }
+        .map-responsive iframe {
+            width: 90%;
+        }
+    }
+    .left {
+        flex-basis: 200px;
+        order: 1;
+    }
+    .right {
+        flex-basis: 200px;
+        order: 2;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+    .about {
+        .map-responsive {
+            padding-bottom: 56.25%;
+        }
+    }
+}
