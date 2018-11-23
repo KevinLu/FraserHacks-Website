@@ -42,7 +42,7 @@ img {
 }
 
 .hero {
-  background-image: url("/bg.svg");
+  background-image: url("../../assets/Hero/bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
