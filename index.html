@@ -13,6 +13,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="src/js/jquery.drawsvg.js"></script>
@@ -81,11 +87,17 @@
         <div class="absolute-asset squig-yellow">
             <img src="assets/Info/squig_yellow.png" alt="Yellow Squigly Line">
         </div>
+        <div class="absolute-asset triangle-purple-2">
+            <img src="assets/Info/triangle_purple_2.png" alt="Purple Triangle 2">
+        </div>
     </section>
     <section class="schedule" id="schedule">
         <div class="container schedule-content">
             <h1 class="heading"><span class="underline--magical">Event Schedule</span></h1>
             <h2>The schedule will be released as the date of the hackathon approaches.</h2>
+        </div>
+        <div class="absolute-asset x-green">
+            <img src="assets/Schedule/x_green.png" alt="Green X">
         </div>
     </section>
     <section class="sponsors" id="sponsors">
@@ -93,14 +105,22 @@
             <h1 class="heading"><span class="underline--magical">Sponsors</span></h1>
             <div class="row justify-content-center">
                 <div class="logo">
-                    <img class="img-fluid" src="assets/Sponsors/johnfraser_logo.webp" alt="">
+                    <picture>
+                        <source srcset="assets/Sponsors/johnfraser_logo.webp" type="image/webp">
+                        <source srcset="assets/Sponsors/johnfraser_logo.png" type="image/png">
+                        <img class="img-fluid" src="assets/Sponsors/johnfraser_logo.png">
+                    </picture>
                 </div>
                 <div class="logo">
                     <img class="img-fluid" src="assets/Sponsors/jetbrains.svg" alt="">
                 </div>
             </div>
             <h2>We'd love to have you as a sponsor!</h2>
-            <h3>Please e-mail us at <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a> or check out our <a href="#">sponsorship packages</a>.</h3>
+            <h3>Please e-mail us at <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a> or check out our
+                <a href="#">sponsorship packages</a>.</h3>
+        </div>
+        <div class="absolute-asset circle-pink">
+            <img src="assets/Sponsors/circle_pink.png" alt="Pink Circle">
         </div>
     </section>
     <section class="faq" id="faq">
@@ -119,23 +139,28 @@
                 </div>
                 <div class="faq-qa">
                     <h3>What should I bring to the event?</h3>
-                    <p>Laptops, chargers, and a student card or other form of ID are required for the event. But feel free to bring whatever else makes you comfortable! </p>
+                    <p>Laptops, chargers, and a student card or other form of ID are required for the event. But feel
+                        free to bring whatever else makes you comfortable! </p>
                 </div>
                 <div class="faq-qa">
                     <h3>What if I’m not a high school student?</h3>
-                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="#" target="_blank">register here</a>.</p>
+                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="#" target="_blank">register
+                            here</a>.</p>
                 </div>
                 <div class="faq-qa">
                     <h3>What’s the cost to attend?</h3>
-                    <p>Absolutely nothing! There is no cost to attend FraserHacks thanks to the generous contributions from our sponsors. </p>
+                    <p>Absolutely nothing! There is no cost to attend FraserHacks thanks to the generous contributions
+                        from our sponsors. </p>
                 </div>
                 <div class="faq-qa">
                     <h3>Who is eligible to participate?</h3>
-                    <p>Students from all of Peel Region are encouraged to apply to attend FraserHacks. All students are welcome! </p>
+                    <p>Students from all of Peel Region are encouraged to apply to attend FraserHacks. All students are
+                        welcome! </p>
                 </div>
                 <div class="faq-qa">
                     <h3>What if I have another question?</h3>
-                    <p>Feel free to email us at <a href="mailto:contact@fraserhacks.ca" target="_blank">contact@fraserhacks.ca</a> or send a message to our social media pages.</p>
+                    <p>Feel free to email us at <a href="mailto:contact@fraserhacks.ca" target="_blank">contact@fraserhacks.ca</a>
+                        or send a message to our social media pages.</p>
                 </div>
                 <div class="faq-qa">
                     <h3>How many people will be at the event?</h3>
@@ -143,18 +168,46 @@
                 </div>
                 <div class="faq-qa">
                     <h3>What kind of workshops and activities will be hosted?</h3>
-                    <p>We’re hosting a variety of workshops from coding basics to working with artificial intelligence. In addition, we have a ton of fun activities planned for you such as e-sports tournaments, nugget-eating contests, and more! FraserHacks is much more than just a hackathon—we'll make sure that it’s an event you’ll thoroughly enjoy.</p>
+                    <p>We’re hosting a variety of workshops from coding basics to working with artificial intelligence.
+                        In addition, we have a ton of fun activities planned for you such as e-sports tournaments,
+                        nugget-eating contests, and more! FraserHacks is much more than just a hackathon—we'll make
+                        sure that it’s an event you’ll thoroughly enjoy.</p>
                 </div>
                 <div class="faq-qa">
                     <h3>Is there a code of conduct?</h3>
-                    <p>Yes. Please follow all school rules and be respectful to all participants. Feel free to read our code of conduct <a href="/conduct"
-                            target="_blank">here</a>.</p>
+                    <p>Yes. Please follow all school rules and be respectful to all participants. Feel free to read our
+                        code of conduct <a href="https://hackcodeofconduct.org/" target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>
+        <div class="absolute-asset circle-green">
+            <img src="assets/FAQ/circle_green.png" alt="Green Circle">
+        </div>
     </section>
     <footer>
-
+        <div class="footer-content">
+            <a href="#">
+                <span style="font-size: 1.2em; color: #3b5998;">
+                    <i class="fab fa-facebook"></i>
+                </span>
+            </a>
+            <a href="#">
+                    <span style="font-size: 1.2em; color: #38A1F3;">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+            </a>
+            <a href="#">
+                    <span style="font-size: 1.2em;">
+                        <i id="insta" class="fab fa-instagram"></i>
+                    </span>
+            </a>
+            <a rel="noopener noreferrer" href="https://hackcodeofconduct.org/">
+                <h3>CODE OF CONDUCT</h3>
+            </a>
+            <a rel="noopener noreferrer" href="privacy.html">
+                <h3>PRIVACY POLICY</h3>
+            </a>
+        </div>
     </footer>
     <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
