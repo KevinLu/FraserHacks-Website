@@ -140,6 +140,16 @@ img {
   cursor: pointer;
 }
 
+.hero-content .mailinglist-alert {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #24e77c;
+  margin-top: -4em;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .hero-content .styledinput {
   text-align: center;
   margin-top: 5em;

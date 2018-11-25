@@ -37,21 +37,20 @@
                 February 29, 2019
             </h2>
             <h3>John Fraser Secondary School, Mississauga</h3>
-            <form class="styledinput">
-                <label for="signup" class="subsubtitle">
+            <form class="styledinput" id="mailinglist">
+                <label class="subsubtitle">
                     <span class="label">Sign up for our
                         mailing list to be notified when applications are open.
                     </span>
-                    <div class="null emailinput">
                         <div>
-                            <input id="signup" type="email" placeholder="Enter your email address" value="">
+                            <input id="email" type="email" placeholder="Enter your email address" name="email" required>
                             <button type="submit">
                                 Register Interest
                             </button>
                         </div>
-                    </div>
                 </label>
             </form>
+            <div class="mailinglist-alert"><p>Great! You're on our mailing list now :)</p></div>
             <!-- <a href="#">Apply Now</a> -->
         </div>
     </section>
@@ -224,6 +223,8 @@
             </a>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script src="src/js/mailinglist.js"></script>
     <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
             duration: 5000
