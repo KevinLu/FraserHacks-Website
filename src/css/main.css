@@ -208,6 +208,16 @@ img {
   margin-top: 1em;
 }
 
+.about a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  background-repeat: no-repeat;
+  background-size: 100% .1em;
+  background-position: 0 100%;
+  color: white;
+}
+
 .about p {
   margin-top: 2em;
   text-align: center;
@@ -312,7 +322,7 @@ img {
 }
 
 .schedule .underline--magical {
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   background-repeat: no-repeat;
   background-size: 100% .2em;
   background-position: 0 100%;

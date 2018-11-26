@@ -34,7 +34,7 @@
         <div class="hero-content">
             <img id="hero-logo" src="assets/Hero/FraserHacks-logo.svg" alt="FraserHacks Logo: Blue circular logo">
             <h2>
-                February 29, 2019
+                February 23, 2019
             </h2>
             <h3>John Fraser Secondary School, Mississauga</h3>
             <form class="styledinput" id="mailinglist">
@@ -42,15 +42,17 @@
                     <span class="label">Sign up for our
                         mailing list to be notified when applications are open.
                     </span>
-                        <div>
-                            <input id="email" type="email" placeholder="Enter your email address" name="email" required>
-                            <button type="submit">
-                                Register Interest
-                            </button>
-                        </div>
+                    <div>
+                        <input id="email" type="email" placeholder="Enter your email address" name="email" required>
+                        <button type="submit">
+                            Register Interest
+                        </button>
+                    </div>
                 </label>
             </form>
-            <div class="mailinglist-alert"><p>Great! You're on our mailing list now :)</p></div>
+            <div class="mailinglist-alert">
+                <p>Great! You're on our mailing list now :)</p>
+            </div>
             <!-- <a href="#">Apply Now</a> -->
         </div>
     </section>
@@ -92,9 +94,11 @@
                 </div>
                 <div class="right">
                     <p>FraserHacks is Mississauga's largest high school hackathon organized entirely by students at
-                        John Fraser Secondary School. More than 100 students from all of Peel Region will be coming
+                        <a href="http://schools.peelschools.org/sec/johnfraser/Pages/default.aspx">John Fraser Secondary School</a>. More than 100 students from all of Peel Region will be coming
                         together on February 28, 2019, for a full 10 hours of friendly hacking, enthusiastic learning,
-                        and delicious food. </p>
+                        and delicious food.</p>
+                    <br>
+                    <h2>2665 Erin Centre Blvd, Mississauga, ON L5M 5H6</h2>
                 </div>
             </div>
         </div>
@@ -130,8 +134,7 @@
                 </div>
             </div>
             <h2>We'd love to have you as a sponsor!</h2>
-            <h3>Please e-mail us at <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a> or check out our
-                <a href="#">sponsorship packages</a>.</h3>
+            <h3>Please e-mail us at <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a>.</h3>
         </div>
         <div class="absolute-asset circle-pink">
             <img src="assets/Sponsors/circle_pink.png" alt="Pink Circle">
@@ -158,8 +161,9 @@
                 </div>
                 <div class="faq-qa">
                     <h3>What if I’m not a high school student?</h3>
-                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="#" target="_blank">register
-                            here</a>.</p>
+                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="https://www.facebook.com/fraserhacks/"
+                            target="_blank">message us
+                            here</a> or on any of our social media platforms.</p>
                 </div>
                 <div class="faq-qa">
                     <h3>What’s the cost to attend?</h3>
@@ -200,34 +204,34 @@
     </section>
     <footer>
         <div class="footer-content">
-            <a href="#">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fraserhacks/">
                 <span style="font-size: 1.2em; color: #3b5998;">
                     <i class="fab fa-facebook"></i>
                 </span>
             </a>
-            <a href="#">
+            <a el="noopener noreferrer" target="_blank" href="https://twitter.com/fraserhacks">
                 <span style="font-size: 1.2em; color: #38A1F3;">
                     <i class="fab fa-twitter"></i>
                 </span>
             </a>
-            <a href="#">
+            <a el="noopener noreferrer" target="_blank" href="https://www.instagram.com/fraser_hacks/">
                 <span style="font-size: 1.2em;">
                     <i id="insta" class="fab fa-instagram"></i>
                 </span>
             </a>
-            <a rel="noopener noreferrer" href="https://hackcodeofconduct.org/">
+            <a rel="noopener noreferrer" target="_blank" href="https://hackcodeofconduct.org/">
                 <h3>CODE OF CONDUCT</h3>
             </a>
-            <a rel="noopener noreferrer" href="privacy.html">
+            <!-- <a rel="noopener noreferrer" href="privacy.html">
                 <h3>PRIVACY POLICY</h3>
-            </a>
+            </a> -->
         </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
     <script src="src/js/mailinglist.js"></script>
     <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
-            duration: 5000
+            duration: 10000
         });
         mySVG.drawsvg('animate');
     </script>
