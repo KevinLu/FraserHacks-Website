@@ -9,6 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon tag -->
+    <link rel="icon" type="img/png" href="assets/Hero/FraserHacks-logo.png">
     <title>FraserHacks 2019</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,18 +42,18 @@
             <form class="styledinput" id="mailinglist">
                 <label class="subsubtitle">
                     <span class="label">Sign up for our
-                        mailing list to be notified when applications are open.
+                        mailing list to be notified of when applications are open.
                     </span>
                     <div>
                         <input id="email" type="email" placeholder="Enter your email address" name="email" required>
                         <button type="submit">
-                            Register Interest
+                            Subscribe
                         </button>
                     </div>
                 </label>
             </form>
             <div class="mailinglist-alert">
-                <p>Great! You're on our mailing list now :)</p>
+                <p>You have been registered to our mailing list.</p>
             </div>
             <!-- <a href="#">Apply Now</a> -->
         </div>
@@ -63,6 +65,7 @@
             </div>
             <div class="about-container">
                 <div class="left">
+                  <div class="jag-logo">
                     <svg id="svg" version="1.1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs>
                             <mask id="masking" maskUnits="objectBoundingBox">
@@ -91,9 +94,10 @@
                                 stroke="none" fill="#1424c4" fill-rule="evenodd"></path>
                         </g>
                     </svg>
+                  </div>
                 </div>
                 <div class="right">
-                    <p>FraserHacks is Mississauga's largest high school hackathon organized entirely by students at
+                    <p>FraserHacks is Mississauga's largest high school hackathon organized entirely by students from
                         <a href="http://schools.peelschools.org/sec/johnfraser/Pages/default.aspx">John Fraser Secondary School</a>. More than 100 students from all of Peel Region will be coming
                         together on February 28, 2019, for a full 10 hours of friendly hacking, enthusiastic learning,
                         and delicious food.</p>
@@ -112,7 +116,7 @@
     <section class="schedule" id="schedule">
         <div class="container schedule-content">
             <h1 class="heading"><span class="underline--magical">Event Schedule</span></h1>
-            <h2>The schedule will be released as the date of the hackathon approaches.</h2>
+            <h2>The schedule will be posted soon.</h2>
         </div>
         <div class="absolute-asset x-green">
             <img src="assets/Schedule/x_green.png" alt="Green X">
@@ -123,18 +127,22 @@
             <h1 class="heading"><span class="underline--magical">Sponsors</span></h1>
             <div class="row justify-content-center">
                 <div class="logo">
+                  <a href="http://jfss.ca"
                     <picture>
                         <source srcset="assets/Sponsors/johnfraser_logo.webp" type="image/webp">
                         <source srcset="assets/Sponsors/johnfraser_logo.png" type="image/png">
                         <img class="img-fluid" src="assets/Sponsors/johnfraser_logo.png">
                     </picture>
+                  </a>
                 </div>
+                <a href="https://www.jetbrains.com/">
                 <div class="logo">
                     <img class="img-fluid" src="assets/Sponsors/jetbrains.svg" alt="">
                 </div>
+              </a>
             </div>
             <h2>We'd love to have you as a sponsor!</h2>
-            <h3>Please e-mail us at <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a>.</h3>
+            <h3>Please e-mail us at <a href="mailto:sponsor@fraserhacks.ca">sponsor@fraserhacks.ca</a>.</h3>
         </div>
         <div class="absolute-asset circle-pink">
             <img src="assets/Sponsors/circle_pink.png" alt="Pink Circle">
@@ -146,8 +154,8 @@
             <div class="row">
                 <div class="faq-qa">
                     <h3>What is FraserHacks?</h3>
-                    <p>FraserHacks is a <strong>hackathon</strong>—an event where students like you gather to work on
-                        groundbreaking projects. Team up with up to 4 buddies and create anything you can dream of!</p>
+                    <p>FraserHacks is a <strong>hackathon</strong>—an innovation marathon where students come together
+                      to work on groundbreaking projects. Team up with up to 4 of your friends and create anything you can dream of!</p>
                 </div>
                 <div class="faq-qa">
                     <h3>Do I need to know how to code to participate?</h3>
@@ -161,7 +169,7 @@
                 </div>
                 <div class="faq-qa">
                     <h3>What if I’m not a high school student?</h3>
-                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="https://www.facebook.com/fraserhacks/"
+                    <p>We’d love to have you as a mentor! You can <a href="https://www.facebook.com/fraserhacks/"
                             target="_blank">message us
                             here</a> or on any of our social media platforms.</p>
                 </div>
@@ -172,29 +180,28 @@
                 </div>
                 <div class="faq-qa">
                     <h3>Who is eligible to participate?</h3>
-                    <p>Students from all of Peel Region are encouraged to apply to attend FraserHacks. All students are
-                        welcome! </p>
+                    <p>Students from all of Peel Region are encouraged to apply to FraserHacks!</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>How many people will be at the event?</h3>
+                    <p>We're expecting over 100 students to come together and work on their dream project!</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What kind of workshops and activities will be hosted?</h3>
+                    <p>We’re hosting a variety of workshops from coding basics to working with artificial intelligence.
+                      In addition, we will have a ton of fun activities planned for you such as an esports tournament,
+                      cup stacking, and more! FraserHacks is much more than just a hackathon—we'll make sure that it’s
+                      an event you’ll never forget.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>Is there a code of conduct?</h3>
+                    <p>Yes. We expect all participants to be respectful and follow our school rules. Our code of
+                      conduct can be found <a href="https://hackcodeofconduct.org/" target="_blank">here</a>.</p>
                 </div>
                 <div class="faq-qa">
                     <h3>What if I have another question?</h3>
                     <p>Feel free to email us at <a href="mailto:contact@fraserhacks.ca" target="_blank">contact@fraserhacks.ca</a>
                         or send a message to our social media pages.</p>
-                </div>
-                <div class="faq-qa">
-                    <h3>How many people will be at the event?</h3>
-                    <p>We're expecting over 100 students coming together to hack on their projects.</p>
-                </div>
-                <div class="faq-qa">
-                    <h3>What kind of workshops and activities will be hosted?</h3>
-                    <p>We’re hosting a variety of workshops from coding basics to working with artificial intelligence.
-                        In addition, we have a ton of fun activities planned for you such as e-sports tournaments,
-                        nugget-eating contests, and more! FraserHacks is much more than just a hackathon—we'll make
-                        sure that it’s an event you’ll thoroughly enjoy.</p>
-                </div>
-                <div class="faq-qa">
-                    <h3>Is there a code of conduct?</h3>
-                    <p>Yes. Please follow all school rules and be respectful to all participants. Feel free to read our
-                        code of conduct <a href="https://hackcodeofconduct.org/" target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>

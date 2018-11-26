@@ -207,7 +207,13 @@ img {
   font-family: 'Muli', sans-serif;
   margin-top: 1em;
 }
-
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.jag-logo {
+  animation: fadein 5s;
+}
 .about a {
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
@@ -379,6 +385,20 @@ img {
 
 .sponsors .logo {
   padding: 1.5rem;
+}
+
+@keyframes logo-hover {
+  from {opacity: 1; transform: scale(1, 1);}
+  to {opacity: 0.5; transform: scale(1.1, 1.1);}
+
+
+}
+
+.img-fluid:hover {
+  animation-name: logo-hover;
+  animation-duration: 0.5s;
+  opacity: 0.5;
+  transform: scale(1.1, 1.1)
 }
 
 .sponsors .row {
