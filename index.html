@@ -9,13 +9,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon tag -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>FraserHacks 2019</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="src/js/jquery.drawsvg.js"></script>
+    <!-- <script src="src/js/jquery.drawsvg.js"></script> -->
 </head>
 
 <body> 
@@ -28,10 +36,26 @@
         <div class="hero-content">
             <img id="hero-logo" src="assets/Hero/FraserHacks-logo.svg" alt="FraserHacks Logo: Blue circular logo">
             <h2>
-                February 29, 2019
+                February 23, 2019
             </h2>
             <h3>John Fraser Secondary School, Mississauga</h3>
-            <a href="#">Apply Now</a>
+            <form class="styledinput" id="mailinglist">
+                <label class="subsubtitle">
+                    <span class="label">Sign up for our
+                        mailing list to be notified of when applications are open.
+                    </span>
+                    <div>
+                        <input id="email" type="email" placeholder="Enter your email address" name="email" required>
+                        <button type="submit">
+                            Subscribe
+                        </button>
+                    </div>
+                </label>
+            </form>
+            <div class="mailinglist-alert">
+                <p>You have been registered to our mailing list.</p>
+            </div>
+            <!-- <a href="#">Apply Now</a> -->
         </div>
     </section>
     <section class="about" id="about">
@@ -41,8 +65,7 @@
             </div>
             <div class="about-container">
                 <div class="left">
-                    <svg id="svg" version="1.1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg id="svg" version="1.1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs>
                             <mask id="masking" maskUnits="objectBoundingBox">
                                 <path d="M-62.12 96.97C21.545-2.364 301.666-114.667 140 7.333c-161.667 122-309.697 403.273-116.667 208C131.47 105.94 355.333-149.333 245 20S-155.304 487.18 38 332.667C234 176 458.667-194 356 25 253.333 244-173.553 600.852 100.667 388.667 360 188 468.667-109.333 448 14 427.333 137.333-1.333 597.333 234 380 469.333 162.667 576-136 526 18S182 558.667 336 386C490 213.333 646.667-160.667 599 11c-47.667 171.667-271.333 494-179 387C512.333 291 717.333-142 663 9c-54.333 151-263 561-151 379S754-128.667 723 12c-31 140.667-226.333 482-132 371S812.667-160.667 783 12c-29.667 172.667-193 479.333-123 366C730 264.667 870.667-142 831 8S674 501.667 722.667 420.667c48.666-81 208.666-666 185.333-408.667S704.394 593.788 806.06 428.788C907.728 263.788 989.334-176.667 947 66c-42.333 242.667-84.698 474.253-48.333 382.667 40.91-103.03 122.545-291.09 122.545-291.09"
@@ -73,37 +96,151 @@
                 </div>
                 <div class="right">
                     <p>FraserHacks is Mississauga's largest high school hackathon organized entirely by students at
-                        John Fraser Secondary School. More than 100 students from all of Peel Region will be coming
-                        together on February 28, 2019, for a full 10 hours of friendly hacking, enthusiastic learning,
-                        and delicious food. </p>
+                        <a href="http://schools.peelschools.org/sec/johnfraser/Pages/default.aspx">John Fraser
+                            Secondary School</a>. More than 100 students from all of Peel Region will be coming
+                        together on February 23, 2019, for a full 10 hours of friendly hacking, enthusiastic learning,
+                        and delicious food.</p>
+                    <br>
+                    <h2>2665 Erin Centre Blvd, Mississauga, ON L5M 5H6</h2>
                 </div>
             </div>
+        </div>
+        <div class="absolute-asset squig-yellow">
+            <img src="assets/Info/squig_yellow.png" alt="Yellow Squigly Line">
+        </div>
+        <div class="absolute-asset triangle-purple-2">
+            <img src="assets/Info/triangle_purple_2.png" alt="Purple Triangle 2">
         </div>
     </section>
     <section class="schedule" id="schedule">
         <div class="container schedule-content">
-
+            <h1 class="heading"><span class="underline--magical">Event Schedule</span></h1>
+            <h2>The schedule will be posted soon.</h2>
+        </div>
+        <div class="absolute-asset x-green">
+            <img src="assets/Schedule/x_green.png" alt="Green X">
         </div>
     </section>
     <section class="sponsors" id="sponsors">
         <div class="container sponsors-content">
-
+            <h1 class="heading"><span class="underline--magical">Sponsors</span></h1>
+            <div class="row justify-content-center">
+                <div class="logo">
+                    <a href="http://schools.peelschools.org/sec/johnfraser/Pages/default.aspx" target="_blank">
+                        <picture>
+                            <source srcset="assets/Sponsors/johnfraser_logo.webp" type="image/webp">
+                            <source srcset="assets/Sponsors/johnfraser_logo.png" type="image/png">
+                            <img class="img-fluid" src="assets/Sponsors/johnfraser_logo.png">
+                        </picture>
+                    </a>
+                </div>
+                <a href="https://www.jetbrains.com/" target="_blank">
+                    <div class="logo">
+                        <img class="img-fluid" src="assets/Sponsors/jetbrains.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <h2>We'd love to have you as a sponsor!</h2>
+            <h3>Please e-mail us at <a href="mailto:sponsors@fraserhacks.ca">sponsors@fraserhacks.ca</a>.</h3>
+        </div>
+        <div class="absolute-asset circle-pink">
+            <img src="assets/Sponsors/circle_pink.png" alt="Pink Circle">
         </div>
     </section>
     <section class="faq" id="faq">
         <div class="container faq-content">
-
+            <h1 class="heading"><span class="underline--magical">Frequently Asked Questions</span></h1>
+            <div class="row">
+                <div class="faq-qa">
+                    <h3>What is FraserHacks?</h3>
+                    <p>FraserHacks is a <strong>hackathon</strong>—an innovation marathon where students come together
+                        to work on groundbreaking projects. Team up with up to 4 of your friends and create anything you can dream of!</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>Do I need to know how to code to participate?</h3>
+                    <p>FFraserHacks welcomes people of all coding backgrounds—even if that means none at all! We will
+                        have a variety of workshops and mentors at the event to help you write your first line of code.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What kind of workshops and activities will be hosted?</h3>
+                    <p>We’re hosting a variety of workshops from coding basics to working with artificial intelligence.
+                        In addition, we will have a ton of fun activities planned for you such as an esports
+                        tournament, cup stacking, and more! FraserHacks is much more than just a hackathon—we'll make
+                        sure that it’s an event you’ll never forget.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What should I bring to the event?</h3>
+                    <p>Laptops, chargers, and a student card or other form of ID are required for the event. But feel
+                        free to bring whatever else makes you comfortable!</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What if I’m not a high school student?</h3>
+                    <p>You can still participate! We’d love to have you as a mentor! You can <a href="https://www.facebook.com/fraserhacks/"
+                            target="_blank">message us
+                            here</a> or on any of our social media platforms.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>Is there a code of conduct?</h3>
+                    <p>Yes. Please follow all school rules and be respectful to all participants. Feel free to read our
+                        code of conduct <a href="https://hackcodeofconduct.org/" target="_blank">here</a>.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What’s the cost to attend?</h3>
+                    <p>Absolutely nothing! There is no cost to attend FraserHacks thanks to the generous contributions
+                        from our sponsors. </p>
+                </div>
+                <div class="faq-qa">
+                    <h3>Who is eligible to participate?</h3>
+                    <p>Students from all of Peel Region are encouraged to apply to FraserHacks!</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>How many people will be at the event?</h3>
+                    <p>We're expecting over 100 students to come together and work on their dream project.</p>
+                </div>
+                <div class="faq-qa">
+                    <h3>What if I have another question?</h3>
+                    <p>Feel free to email us at <a href="mailto:contact@fraserhacks.ca" target="_blank">contact@fraserhacks.ca</a>
+                        or send a message to our social media pages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute-asset circle-green">
+            <img src="assets/FAQ/circle_green.png" alt="Green Circle">
         </div>
     </section>
     <footer>
-
+        <div class="footer-content">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fraserhacks/">
+                <span style="font-size: 1.2em; color: #3b5998;">
+                    <i class="fab fa-facebook"></i>
+                </span>
+            </a>
+            <a el="noopener noreferrer" target="_blank" href="https://twitter.com/fraserhacks">
+                <span style="font-size: 1.2em; color: #38A1F3;">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a>
+            <a el="noopener noreferrer" target="_blank" href="https://www.instagram.com/fraser_hacks/">
+                <span style="font-size: 1.2em;">
+                    <i id="insta" class="fab fa-instagram"></i>
+                </span>
+            </a>
+            <a rel="noopener noreferrer" target="_blank" href="https://hackcodeofconduct.org/">
+                <h3>CODE OF CONDUCT</h3>
+            </a>
+            <!-- <a rel="noopener noreferrer" href="privacy.html">
+                <h3>PRIVACY POLICY</h3>
+            </a> -->
+        </div>
     </footer>
-    <script type="text/javascript">
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script src="src/js/mailinglist.js"></script>
+    <!-- <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
-            duration: 5000
+            duration: 10000
         });
         mySVG.drawsvg('animate');
-    </script>
+    </script> -->
     <script src="src/js/script.js" async defer></script>
 </body>
 
