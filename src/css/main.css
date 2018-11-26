@@ -178,8 +178,8 @@ img {
 .hero-content .styledinput button {
   vertical-align: middle;
   font-family: 'Muli', sans-serif;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .2s;
+  transition: .2s;
   border: 1px solid #000413;
   padding: .5em 1.5em;
   margin-top: .25em;
@@ -207,13 +207,7 @@ img {
   font-family: 'Muli', sans-serif;
   margin-top: 1em;
 }
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-.jag-logo {
-  animation: fadein 5s;
-}
+
 .about a {
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
@@ -316,6 +310,7 @@ img {
   font-family: 'Muli', sans-serif;
   font-weight: 700;
   font-size: 2.25em;
+  text-align: center;
 }
 
 .schedule h2 {
@@ -356,6 +351,7 @@ img {
   font-family: 'Muli', sans-serif;
   font-weight: 700;
   font-size: 2.25em;
+  text-align: center;
 }
 
 .sponsors h2 {
@@ -387,20 +383,6 @@ img {
   padding: 1.5rem;
 }
 
-@keyframes logo-hover {
-  from {opacity: 1; transform: scale(1, 1);}
-  to {opacity: 0.5; transform: scale(1.1, 1.1);}
-
-
-}
-
-.img-fluid:hover {
-  animation-name: logo-hover;
-  animation-duration: 0.5s;
-  opacity: 0.5;
-  transform: scale(1.1, 1.1)
-}
-
 .sponsors .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +403,13 @@ img {
 .sponsors .img-fluid {
   max-width: 100%;
   height: auto;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.sponsors .img-fluid:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .sponsors .underline--magical {
@@ -457,6 +446,7 @@ img {
   font-family: 'Muli', sans-serif;
   font-weight: 700;
   font-size: 2.25em;
+  text-align: center;
 }
 
 .faq h3 {
@@ -660,6 +650,9 @@ footer .footer-content a {
         -ms-flex-order: 2;
             order: 2;
   }
+  .schedule h1 {
+    text-align: left;
+  }
   .schedule h2 {
     font-size: 2em;
   }
@@ -670,6 +663,12 @@ footer .footer-content a {
     top: 1520px;
     left: -75px;
     display: inline;
+  }
+  .sponsors h1 {
+    text-align: left;
+  }
+  .faq h1 {
+    text-align: left;
   }
   .faq .faq-qa {
     -webkit-box-flex: 0;
