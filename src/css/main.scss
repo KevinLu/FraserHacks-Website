@@ -87,7 +87,7 @@ img {
         opacity: 0;
         transition: 0.3s;
     }
-    .styledinput {
+    .mailinglist {
         text-align: center;
         margin-top: 5em; //white-space: nowrap;
         font-family: 'Muli', sans-serif;
@@ -98,37 +98,37 @@ img {
         }
         input {
             font-family: 'Muli', sans-serif;
-            padding: .85em 1.5em;
+            padding: 12px;
             margin-top: .5em;
-            border-radius: 2em;
-            width: 20em;
+            border-radius: 50px;
+            width: 16em;
             letter-spacing: .3px;
+            font-size: 1.05em;
             height: 100%;
             line-height: normal;
             outline: 0;
             border: 0px solid;
         }
         button {
-            vertical-align: middle;
+            z-index: 999;
+            //vertical-align: middle;
             font-family: 'Muli', sans-serif;
             transition: .2s;
-            border: 1px solid #000413;
-            padding: .5em 1.5em;
-            margin-top: .25em;
-            margin-bottom: .25em;
-            border-radius: 2em; //margin-left: -4em;
+            border-radius: 50px; //margin-left: -4em;
+            padding: 13px;
             font-weight: 700;
             font-size: 1.12em;
             letter-spacing: .3px;
             height: 100%;
-            background-color: #000413;
+            border: 1px solid #3e81d8;
+            background-color: #3e81d8;
             color: white;
             user-select: none;
             cursor: pointer;
         }
         button:hover {
-            border: 1px solid #3e81d8;
-            background-color: #3e81d8;
+            border: 1px solid #10396e;
+            background-color: #10396e;
         }
     }
 }
@@ -305,6 +305,7 @@ img {
     .circle-pink {
         top: 2200px;
         right: 0px;
+        display: none;
     }
 }
 
@@ -371,13 +372,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Muli', sans-serif;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+    padding-top: 5em;
     .footer-content {
         flex-wrap: wrap;
         white-space: nowrap;
         padding-left: 0.25em;
         padding-right: 0.25em;
-        margin-top: 1.5em;
+        margin-bottom: 15em;
         width: 95%;
         display: flex !important;
         justify-content: center;
@@ -393,6 +395,10 @@ footer {
             color: white;
         }
     }
+    background-image: url('/assets/Footer/Mask\ Group\ 2.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media only screen and (min-width: 320px) {
@@ -403,7 +409,7 @@ footer {
 
 @media only screen and (min-width: 473px) {
     .hero-content {
-        .styledinput {
+        .mailinglist {
             input {
                 width: 22em;
             }
@@ -416,9 +422,14 @@ footer {
 
 @media only screen and (min-width: 492px) {
     footer {
+        padding-bottom: 1em;
+        padding-top: 2em;
         a {
             margin-left: 0em !important;
             margin-right: 0em !important;
+        }
+        .footer-content {
+            margin-bottom: 3em;
         }
     }
 }
@@ -437,7 +448,7 @@ footer {
         a {
             font-size: 1.5em;
         }
-        .styledinput {
+        .mailinglist {
             input {
                 width: 30em;
             }
@@ -468,6 +479,17 @@ footer {
     .right {
         flex-basis: 200px;
         order: 2;
+    }
+    .sponsors {
+        .circle-pink {
+            top: 2200px;
+            right: 0px;
+            display: inline;
+        }
+    }
+    footer {
+        padding-bottom: 1em;
+        padding-top: 10em;
     }
 }
 

@@ -150,46 +150,45 @@ img {
   transition: 0.3s;
 }
 
-.hero-content .styledinput {
+.hero-content .mailinglist {
   text-align: center;
   margin-top: 5em;
   font-family: 'Muli', sans-serif;
 }
 
-.hero-content .styledinput label {
+.hero-content .mailinglist label {
   display: block;
   margin-bottom: 15px;
   font-size: 1em;
 }
 
-.hero-content .styledinput input {
+.hero-content .mailinglist input {
   font-family: 'Muli', sans-serif;
-  padding: .85em 1.5em;
+  padding: 12px;
   margin-top: .5em;
-  border-radius: 2em;
-  width: 20em;
+  border-radius: 50px;
+  width: 16em;
   letter-spacing: .3px;
+  font-size: 1.05em;
   height: 100%;
   line-height: normal;
   outline: 0;
   border: 0px solid;
 }
 
-.hero-content .styledinput button {
-  vertical-align: middle;
+.hero-content .mailinglist button {
+  z-index: 999;
   font-family: 'Muli', sans-serif;
   -webkit-transition: .2s;
   transition: .2s;
-  border: 1px solid #000413;
-  padding: .5em 1.5em;
-  margin-top: .25em;
-  margin-bottom: .25em;
-  border-radius: 2em;
+  border-radius: 50px;
+  padding: 13px;
   font-weight: 700;
   font-size: 1.12em;
   letter-spacing: .3px;
   height: 100%;
-  background-color: #000413;
+  border: 1px solid #3e81d8;
+  background-color: #3e81d8;
   color: white;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -198,9 +197,9 @@ img {
   cursor: pointer;
 }
 
-.hero-content .styledinput button:hover {
-  border: 1px solid #3e81d8;
-  background-color: #3e81d8;
+.hero-content .mailinglist button:hover {
+  border: 1px solid #10396e;
+  background-color: #10396e;
 }
 
 .about {
@@ -428,6 +427,7 @@ img {
 .sponsors .circle-pink {
   top: 2200px;
   right: 0px;
+  display: none;
 }
 
 .faq {
@@ -511,7 +511,12 @@ footer {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Muli', sans-serif;
-  margin-bottom: 2em;
+  padding-bottom: 2em;
+  padding-top: 5em;
+  background-image: url("/assets/Footer/Mask Group 2.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 footer .footer-content {
@@ -520,7 +525,7 @@ footer .footer-content {
   white-space: nowrap;
   padding-left: 0.25em;
   padding-right: 0.25em;
-  margin-top: 1.5em;
+  margin-bottom: 15em;
   width: 95%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -551,18 +556,25 @@ footer .footer-content a {
 }
 
 @media only screen and (min-width: 473px) {
-  .hero-content .styledinput input {
+  .hero-content .mailinglist input {
     width: 22em;
   }
-  .hero-content .styledinput button {
+  .hero-content .mailinglist button {
     margin-left: -4em;
   }
 }
 
 @media only screen and (min-width: 492px) {
+  footer {
+    padding-bottom: 1em;
+    padding-top: 2em;
+  }
   footer a {
     margin-left: 0em !important;
     margin-right: 0em !important;
+  }
+  footer .footer-content {
+    margin-bottom: 3em;
   }
 }
 
@@ -579,10 +591,10 @@ footer .footer-content a {
   .hero-content a {
     font-size: 1.5em;
   }
-  .hero-content .styledinput input {
+  .hero-content .mailinglist input {
     width: 30em;
   }
-  .hero-content .styledinput button {
+  .hero-content .mailinglist button {
     margin-left: -4em;
   }
   .about p {
@@ -601,6 +613,15 @@ footer .footer-content a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .sponsors .circle-pink {
+    top: 2200px;
+    right: 0px;
+    display: inline;
+  }
+  footer {
+    padding-bottom: 1em;
+    padding-top: 10em;
   }
 }
 
