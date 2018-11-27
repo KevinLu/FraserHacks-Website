@@ -39,9 +39,8 @@
                 February 23, 2019
             </h2>
             <h3>John Fraser Secondary School, Mississauga</h3>
-            <form action="https://FraserHacks.us19.list-manage.com/subscribe/post" method="POST" class="mailinglist" id="mailinglist">
-                <input type="hidden" name="u" value="a50dd0c50b611bd5e179d9b85">
-                <input type="hidden" name="id" value="36ad7a17fc">
+            <div id="mc_embed_signup">
+            <form action="https://FraserHacks.us19.list-manage.com/subscribe/post?u=a50dd0c50b611bd5e179d9b85&amp;id=36ad7a17fc" method="get" novalidate="true" class="mailinglist validate" id="mailinglist mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                 <label>
                     <span class="label">Sign up for our
                         mailing list to be notified of when applications are open.
@@ -49,17 +48,23 @@
                 </label>
 
                     <div>
-                        <input id="email" type="email" placeholder="Enter your email address" name="MERGE0" required>
-                        <button type="submit">
+                        <input id="mce-email email" type="email" placeholder="Enter your email address" name="EMAIL" required>
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe">
                             Subscribe
                         </button>
                     </div>
-                    <input type="hidden" name="ht" value="2901afb509e25ab968c3570a351b5f61a2ea6837:MTU0MzI3OTQ3MC4zMjIy">
-                    <input type="hidden" name="mc_signupsource" value="hosted">
+                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a50dd0c50b611bd5e179d9b85_36ad7a17fc" tabindex="-1" value=""></div>
+                    <div class="info"></div>  
+
             </form>
-            <div class="mailinglist-alert">
-                <p>You have been registered to our mailing list.</p>
             </div>
+
+<script>
+  $(document).ready(function() {
+    $('#mc_embed_signup').find('form').ajaxChimp();
+});   
+</script>
             <!-- <a href="#">Apply Now</a> -->
         </div>
     </section>
@@ -211,7 +216,7 @@
             </a> -->
         </div>
     </footer>
-    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script src="src/js/jquery.ajaxchimp.min.js"></script>
     <script src="src/js/mailinglist.js"></script>
     <!-- <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
