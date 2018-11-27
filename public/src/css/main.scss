@@ -18,6 +18,11 @@
     width: 100%;
 }
 
+.info_svg {
+    margin-right: 10%;
+    float: right;
+}
+
 .info {
     padding-top: 10px;
 }
@@ -527,6 +532,9 @@ footer {
 }
 
 @media only screen and (min-width: 1010px) {
+    .info_svg {
+        margin-top: 13%;
+    }
     .container {
         width: 720px;
     }
