@@ -51,7 +51,8 @@ form, iframe, noscript {
 
 .info_svg {
   margin-right: 10%;
-  float: right;
+  display: block;
+  margin: auto;
 }
 
 .info {
@@ -601,6 +602,15 @@ footer .footer-content a {
   }
 }
 
+@media only screen and (max-width: 999px) {
+  .info_svg {
+    margin-top: 0%;
+    display: block;
+    margin: auto;
+    float: none;
+  }
+}
+
 @media only screen and (min-width: 492px) {
   footer {
     padding-bottom: 1em;
@@ -662,10 +672,13 @@ footer .footer-content a {
   }
 }
 
-@media only screen and (min-width: 1010px) {
+@media only screen and (min-width: 1010px) and (max-width: 1400px) {
   .info_svg {
     margin-top: 13%;
   }
+}
+
+@media only screen and (min-width: 1010px) {
   .container {
     width: 720px;
   }
