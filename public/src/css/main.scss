@@ -18,6 +18,12 @@
     width: 100%;
 }
 
+.info_svg {
+    margin-right: 10%;
+    display: block;
+    margin: auto;
+}
+
 .info {
     padding-top: 10px;
 }
@@ -453,6 +459,15 @@ footer {
     }
 }
 
+@media only screen and (max-width:999px) {
+    .info_svg {
+        margin-top: 0%;
+        display:block;
+        margin:auto;
+        float: none;
+    }
+}
+
 @media only screen and (min-width: 492px) {
     footer {
         padding-bottom: 1em;
@@ -526,7 +541,15 @@ footer {
     }
 }
 
+
+@media only screen and (min-width: 1010px) and (max-width: 1400px) {
+    .info_svg {
+        margin-top: 13%;
+    }
+}
+
 @media only screen and (min-width: 1010px) {
+
     .container {
         width: 720px;
     }

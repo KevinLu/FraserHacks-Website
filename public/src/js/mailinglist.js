@@ -2,7 +2,12 @@
 
 // function submitForm(e){
 
-//   var list = document.getElementById('mailinglist');
-//   list.nodeValue = ""
+
+//   document.querySelector('.info').style.opacity = '1';
+
+//   setTimeout(function(){
+//     document.querySelector('.info').style.opacity = '0';
+//   },3000);
+
 //   document.getElementById('mailinglist').reset();
 // }

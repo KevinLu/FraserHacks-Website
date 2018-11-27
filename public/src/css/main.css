@@ -49,6 +49,12 @@ form, iframe, noscript {
   width: 100%;
 }
 
+.info_svg {
+  margin-right: 10%;
+  display: block;
+  margin: auto;
+}
+
 .info {
   padding-top: 10px;
 }
@@ -596,6 +602,15 @@ footer .footer-content a {
   }
 }
 
+@media only screen and (max-width: 999px) {
+  .info_svg {
+    margin-top: 0%;
+    display: block;
+    margin: auto;
+    float: none;
+  }
+}
+
 @media only screen and (min-width: 492px) {
   footer {
     padding-bottom: 1em;
@@ -654,6 +669,12 @@ footer .footer-content a {
   footer {
     padding-bottom: 1em;
     padding-top: 10em;
+  }
+}
+
+@media only screen and (min-width: 1010px) and (max-width: 1400px) {
+  .info_svg {
+    margin-top: 13%;
   }
 }
 
