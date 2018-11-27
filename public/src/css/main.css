@@ -37,6 +37,22 @@ form, iframe, noscript {
   margin: 0 auto;
 }
 
+.info.valid {
+  color: green;
+  text-align: center;
+  width: 100%;
+}
+
+.info.error {
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+
+.info {
+  padding-top: 10px;
+}
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -200,6 +216,19 @@ img {
 .hero-content .mailinglist button:hover {
   border: 1px solid #10396e;
   background-color: #10396e;
+}
+
+.hero-content .mailinglist a {
+  margin-top: 0 !important;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+  border: none !important;
+  border-radius: 0px;
+  color: white;
+  padding: 0 0 !important;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .about {
