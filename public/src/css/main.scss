@@ -280,6 +280,8 @@ img {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
     }
     .justify-content-center {
         justify-content: center !important;
@@ -332,6 +334,7 @@ img {
         font-weight: 400;
         font-size: 1.1em;
         line-height: 1.5em;
+        padding-right: 2em;
     }
     a {
         text-decoration: none;
@@ -395,7 +398,7 @@ footer {
             color: white;
         }
     }
-    background-image: url('/assets/Footer/Mask\ Group\ 2.svg');
+    background-image: url('../../assets/Footer/Mask\ Group\ 2.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
