@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #131313;
+  background-color: #13191E;
   color: white;
 }
 
@@ -35,6 +35,28 @@ form, iframe, noscript {
 .container {
   width: 257px;
   margin: 0 auto;
+}
+
+.info.valid {
+  color: green;
+  text-align: center;
+  width: 100%;
+}
+
+.info.error {
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+
+.info_svg {
+  margin-right: 10%;
+  display: block;
+  margin: auto;
+}
+
+.info {
+  padding-top: 10px;
 }
 
 img {
@@ -86,6 +108,58 @@ img {
           justify-content: center;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 50px;
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 28px;
+  height: 28px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 45%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+          transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+          animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+            transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+            transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
 .hero-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,7 +180,8 @@ img {
   position: relative;
   height: 33.33333vh;
   max-width: 75vw;
-  margin-bottom: 2rem;
+  margin-top: 2em;
+  margin-bottom: 5em;
 }
 
 .hero-content h2 {
@@ -182,7 +257,7 @@ img {
   -webkit-transition: .2s;
   transition: .2s;
   border-radius: 50px;
-  padding: 13px;
+  padding: 10.5px;
   font-weight: 700;
   font-size: 1.12em;
   letter-spacing: .3px;
@@ -200,6 +275,19 @@ img {
 .hero-content .mailinglist button:hover {
   border: 1px solid #10396e;
   background-color: #10396e;
+}
+
+.hero-content .mailinglist a {
+  margin-top: 0 !important;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+  border: none !important;
+  border-radius: 0px;
+  color: white;
+  padding: 0 0 !important;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .about {
@@ -276,6 +364,10 @@ img {
   height: 300px;
 }
 
+.about .right h2 {
+  text-align: center;
+}
+
 .about .squig-yellow {
   right: 0px;
   top: 1680px;
@@ -328,10 +420,6 @@ img {
   background-position: 0 100%;
   -webkit-transition: background-size 0.25s ease-in-out;
   transition: background-size 0.25s ease-in-out;
-}
-
-.schedule .underline--magical:hover {
-  background-size: 100% 100%;
 }
 
 .schedule .x-green {
@@ -391,6 +479,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 .sponsors .justify-content-center {
@@ -420,10 +510,6 @@ img {
   transition: background-size 0.25s ease-in-out;
 }
 
-.sponsors .underline--magical:hover {
-  background-size: 100% 100%;
-}
-
 .sponsors .circle-pink {
   top: 2200px;
   right: 0px;
@@ -447,6 +533,7 @@ img {
   font-weight: 700;
   font-size: 2.25em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .faq h3 {
@@ -460,15 +547,17 @@ img {
   margin-bottom: 2em;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.25em;
   line-height: 1.5em;
+  padding-right: 2em;
 }
 
 .faq a {
   text-decoration: none;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
   background-repeat: no-repeat;
-  background-size: 100% .2em;
+  background-size: 100% .1em;
   background-position: 0 100%;
   color: white;
 }
@@ -497,10 +586,6 @@ img {
   transition: background-size 0.25s ease-in-out;
 }
 
-.faq .underline--magical:hover {
-  background-size: 100% 100%;
-}
-
 .faq .circle-green {
   top: 3000px;
   left: -120px;
@@ -513,7 +598,7 @@ footer {
   font-family: 'Muli', sans-serif;
   padding-bottom: 2em;
   padding-top: 5em;
-  background-image: url("/assets/Footer/Mask Group 2.svg");
+  background-image: url("../../assets/Footer/Mask Group 2.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -555,16 +640,49 @@ footer .footer-content a {
   }
 }
 
+@media only screen and (min-width: 383px) {
+  .hero-content .mailinglist input {
+    width: 20em;
+  }
+  .hero-content .mailinglist button {
+    margin-left: -5em;
+    padding: 10.6px;
+    border-radius: 0 50px 50px 0;
+  }
+}
+
 @media only screen and (min-width: 473px) {
+  .scroll-down {
+    display: block;
+  }
+  .container {
+    width: 423px;
+  }
   .hero-content .mailinglist input {
     width: 22em;
   }
   .hero-content .mailinglist button {
-    margin-left: -4em;
+    margin-left: -5em;
+    padding: 11px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .info_svg {
+    margin-top: 0%;
+    display: block;
+    margin: auto;
+    float: none;
   }
 }
 
 @media only screen and (min-width: 492px) {
+  .scroll-down {
+    left: 49%;
+  }
+  .hero-content .mailinglist button {
+    padding: 10.58px;
+  }
   footer {
     padding-bottom: 1em;
     padding-top: 2em;
@@ -580,7 +698,7 @@ footer .footer-content a {
 
 @media only screen and (min-width: 674px) {
   .container {
-    width: 450px;
+    width: 624px;
   }
   .hero-content h2 {
     font-size: 4em;
@@ -625,9 +743,15 @@ footer .footer-content a {
   }
 }
 
+@media only screen and (min-width: 1010px) and (max-width: 1400px) {
+  .info_svg {
+    margin-top: 13%;
+  }
+}
+
 @media only screen and (min-width: 1010px) {
   .container {
-    width: 720px;
+    width: 960px;
   }
   .about-container {
     -ms-flex-wrap: nowrap;
@@ -641,6 +765,9 @@ footer .footer-content a {
   }
   .about .map-responsive iframe {
     width: 90%;
+  }
+  .about .right h2 {
+    text-align: left;
   }
   .about .squig-yellow {
     right: 0px;
