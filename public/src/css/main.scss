@@ -136,8 +136,8 @@ img {
             //vertical-align: middle;
             font-family: 'Muli', sans-serif;
             transition: .2s;
-            border-radius: 50px; //margin-left: -4em;
-            padding: 13px;
+            border-radius: 50px;
+            padding: 10.5px;
             font-weight: 700;
             font-size: 1.12em;
             letter-spacing: .3px;
@@ -220,6 +220,9 @@ img {
         order: 2; //background: #6d6d00;
         flex-basis: 100%;
         height: 300px;
+        h2 {
+            text-align: center;
+        }
     }
     .squig-yellow {
         right: 0px;
@@ -356,6 +359,7 @@ img {
         font-weight: 700;
         font-size: 2.25em;
         text-align: center;
+        margin-bottom: 1em;
     }
     h3 {
         font-family: 'Muli', sans-serif;
@@ -395,9 +399,6 @@ img {
         background-size: 100% .2em;
         background-position: 0 100%;
         transition: background-size 0.25s ease-in-out;
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
     .circle-green {
         top: 3000px;
@@ -445,15 +446,33 @@ footer {
     }
 }
 
+@media only screen and (min-width: 383px) {
+    .hero-content {
+        .mailinglist {
+            input {
+                width: 20em;
+            }
+            button {
+                margin-left: -5em;
+                padding: 10.6px;
+                border-radius: 0 50px 50px 0;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 473px) {
+    .container {
+        width: 423px;
+    }
     .hero-content {
         .mailinglist {
             input {
                 width: 22em;
             }
-
             button {
-                margin-left: -4em;
+                margin-left: -5em;
+                padding: 11px;
             }
         }
     }
@@ -469,6 +488,13 @@ footer {
 }
 
 @media only screen and (min-width: 492px) {
+    .hero-content {
+        .mailinglist {
+            button {
+                padding: 10.58px;
+            }
+        }
+    }
     footer {
         padding-bottom: 1em;
         padding-top: 2em;
@@ -484,7 +510,7 @@ footer {
 
 @media only screen and (min-width: 674px) {
     .container {
-        width: 450px;
+        width: 624px;
     }
     .hero-content {
         h2 {
@@ -549,9 +575,8 @@ footer {
 }
 
 @media only screen and (min-width: 1010px) {
-
     .container {
-        width: 720px;
+        width: 960px;
     }
     .about-container {
         flex-wrap: nowrap;
@@ -565,6 +590,11 @@ footer {
         }
         .map-responsive iframe {
             width: 90%;
+        }
+        .right {
+            h2 {
+                text-align: left;
+            }
         }
         .squig-yellow {
             right: 0px;
