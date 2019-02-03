@@ -6,6 +6,28 @@
     margin: 0 auto;
 }
 
+.info.valid {
+    color: green;
+    text-align: center;
+    width: 100%
+}
+
+.info.error {
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+
+.info_svg {
+    margin-right: 10%;
+    display: block;
+    margin: auto;
+}
+
+.info {
+    padding-top: 10px;
+}
+
 img {
     vertical-align: middle;
     border-style: none;
@@ -114,8 +136,8 @@ img {
             //vertical-align: middle;
             font-family: 'Muli', sans-serif;
             transition: .2s;
-            border-radius: 50px; //margin-left: -4em;
-            padding: 13px;
+            border-radius: 50px;
+            padding: 10.5px;
             font-weight: 700;
             font-size: 1.12em;
             letter-spacing: .3px;
@@ -129,6 +151,19 @@ img {
         button:hover {
             border: 1px solid #10396e;
             background-color: #10396e;
+        }
+
+        a {
+            margin-top: 0 !important;
+            font-family: 'Muli', sans-serif;
+            text-decoration: none;
+            border: none !important;
+            border-radius: 0px;
+            color: white;
+            padding: 0 0 !important;
+            font-size: 1em;
+            font-weight: 300;
+            cursor: pointer;
         }
     }
 }
@@ -185,6 +220,9 @@ img {
         order: 2; //background: #6d6d00;
         flex-basis: 100%;
         height: 300px;
+        h2 {
+            text-align: center;
+        }
     }
     .squig-yellow {
         right: 0px;
@@ -280,6 +318,8 @@ img {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
     }
     .justify-content-center {
         justify-content: center !important;
@@ -319,6 +359,7 @@ img {
         font-weight: 700;
         font-size: 2.25em;
         text-align: center;
+        margin-bottom: 1em;
     }
     h3 {
         font-family: 'Muli', sans-serif;
@@ -332,6 +373,7 @@ img {
         font-weight: 400;
         font-size: 1.1em;
         line-height: 1.5em;
+        padding-right: 2em;
     }
     a {
         text-decoration: none;
@@ -357,9 +399,6 @@ img {
         background-size: 100% .2em;
         background-position: 0 100%;
         transition: background-size 0.25s ease-in-out;
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
     .circle-green {
         top: 3000px;
@@ -395,7 +434,7 @@ footer {
             color: white;
         }
     }
-    background-image: url('/assets/Footer/Mask\ Group\ 2.svg');
+    background-image: url('../../assets/Footer/Mask\ Group\ 2.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -407,20 +446,55 @@ footer {
     }
 }
 
+@media only screen and (min-width: 383px) {
+    .hero-content {
+        .mailinglist {
+            input {
+                width: 20em;
+            }
+            button {
+                margin-left: -5em;
+                padding: 10.6px;
+                border-radius: 0 50px 50px 0;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 473px) {
+    .container {
+        width: 423px;
+    }
     .hero-content {
         .mailinglist {
             input {
                 width: 22em;
             }
             button {
-                margin-left: -4em;
+                margin-left: -5em;
+                padding: 11px;
             }
         }
     }
 }
 
+@media only screen and (max-width:999px) {
+    .info_svg {
+        margin-top: 0%;
+        display:block;
+        margin:auto;
+        float: none;
+    }
+}
+
 @media only screen and (min-width: 492px) {
+    .hero-content {
+        .mailinglist {
+            button {
+                padding: 10.58px;
+            }
+        }
+    }
     footer {
         padding-bottom: 1em;
         padding-top: 2em;
@@ -436,7 +510,7 @@ footer {
 
 @media only screen and (min-width: 674px) {
     .container {
-        width: 450px;
+        width: 624px;
     }
     .hero-content {
         h2 {
@@ -493,9 +567,16 @@ footer {
     }
 }
 
+
+@media only screen and (min-width: 1010px) and (max-width: 1400px) {
+    .info_svg {
+        margin-top: 13%;
+    }
+}
+
 @media only screen and (min-width: 1010px) {
     .container {
-        width: 720px;
+        width: 960px;
     }
     .about-container {
         flex-wrap: nowrap;
@@ -509,6 +590,11 @@ footer {
         }
         .map-responsive iframe {
             width: 90%;
+        }
+        .right {
+            h2 {
+                text-align: left;
+            }
         }
         .squig-yellow {
             right: 0px;
