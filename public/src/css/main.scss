@@ -332,9 +332,6 @@ img {
         background-size: 100% .2em;
         background-position: 0 100%;
         transition: background-size 0.25s ease-in-out;
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
     .x-green {
         top: 1520px;
@@ -400,9 +397,6 @@ img {
         background-size: 100% .2em;
         background-position: 0 100%;
         transition: background-size 0.25s ease-in-out;
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
     .circle-pink {
         top: 2200px;
@@ -439,9 +433,9 @@ img {
     }
     a {
         text-decoration: none;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
         background-repeat: no-repeat;
-        background-size: 100% .2em;
+        background-size: 100% .1em;
         background-position: 0 100%;
         color: white;
     }
