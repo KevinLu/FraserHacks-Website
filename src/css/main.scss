@@ -62,6 +62,69 @@ img {
     justify-content: center;
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 28px;
+    height: 28px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    left: 45%;
+    transform: translate(-50%, 0%) rotate(45deg);
+    animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -71,7 +134,8 @@ img {
         position: relative;
         height: 33.33333vh;
         max-width: 75vw;
-        margin-bottom: 2rem;
+        margin-top: 2em;
+        margin-bottom: 5em;
     }
     h2 {
         font-family: 'Chakra Petch', sans-serif;
@@ -132,8 +196,7 @@ img {
             border: 0px solid;
         }
         button {
-            z-index: 999;
-            //vertical-align: middle;
+            z-index: 999; //vertical-align: middle;
             font-family: 'Muli', sans-serif;
             transition: .2s;
             border-radius: 50px;
@@ -152,7 +215,6 @@ img {
             border: 1px solid #10396e;
             background-color: #10396e;
         }
-
         a {
             margin-top: 0 !important;
             font-family: 'Muli', sans-serif;
@@ -462,6 +524,9 @@ footer {
 }
 
 @media only screen and (min-width: 473px) {
+    .scroll-down {
+        display: block;
+    }
     .container {
         width: 423px;
     }
@@ -481,13 +546,16 @@ footer {
 @media only screen and (max-width:999px) {
     .info_svg {
         margin-top: 0%;
-        display:block;
-        margin:auto;
+        display: block;
+        margin: auto;
         float: none;
     }
 }
 
 @media only screen and (min-width: 492px) {
+    .scroll-down {
+        left: 49%;
+    }
     .hero-content {
         .mailinglist {
             button {
@@ -566,7 +634,6 @@ footer {
         padding-top: 10em;
     }
 }
-
 
 @media only screen and (min-width: 1010px) and (max-width: 1400px) {
     .info_svg {
