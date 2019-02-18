@@ -88,6 +88,24 @@ img {
           align-items: stretch;
 }
 
+.map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .hero {
   background-image: url("../../assets/Hero/bg.svg");
   background-size: cover;
@@ -673,6 +691,48 @@ img {
   margin-bottom: 1em;
 }
 
+.map a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  background-repeat: no-repeat;
+  background-size: 100% .1em;
+  background-position: 0 100%;
+  color: white;
+}
+
+.map p {
+  margin-top: 2em;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  color: #dfdfdf;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.map .left {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+}
+
+.map .right {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+}
+
+.map .right h2 {
+  text-align: center;
+}
+
 .map .underline--magical {
   background-image: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
   background-image: linear-gradient(to right, #ee0979, #ff6a00);
@@ -829,20 +889,6 @@ footer .footer-content a {
   .about p {
     font-size: 1.25em;
   }
-  .left {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .right {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .sponsors .circle-pink {
     top: 2200px;
     right: 0px;
@@ -865,6 +911,10 @@ footer .footer-content a {
     width: 960px;
   }
   .about-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .map-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -894,20 +944,6 @@ footer .footer-content a {
   }
   .about .triangle-purple-2 {
     display: inline;
-  }
-  .left {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .right {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   .schedule h1 {
     text-align: left;
