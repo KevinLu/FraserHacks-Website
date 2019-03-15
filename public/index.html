@@ -510,7 +510,18 @@
                     allowfullscreen></iframe>
                 </div>
                 <div class="right">
-                    <p>Add some contact form here!</p>
+                    <form class="cf" id="contactForm">
+                        <div class="half left cf">
+                          <input type="text" name="name" id="name" placeholder="Name">
+                          <input type="email" name="email" id="email" placeholder="Email address">
+                          <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="half right cf">
+                          <textarea name="message" type="text" name="message" id="message" placeholder="Message"></textarea>
+                        </div>  
+                        <input type="submit" value="Submit" id="input-submit">
+                      </form>
+                      <div class="alert">Your message has been sent!</div>
                 </div>
             </div>
         </div>
@@ -542,6 +553,8 @@
     </footer>
     <script src="src/js/jquery.ajaxchimp.min.js"></script>
     <script src="src/js/mailinglist.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="src/js/form.js"></script>
     <!-- <script type="text/javascript">
         var mySVG = $('#svg').drawsvg({
             duration: 10000
