@@ -48,6 +48,14 @@ img {
     align-items: stretch;
 }
 
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
 .hero {
     background-image: url('../../assets/Hero/bg.svg');
     background-size: cover;
@@ -246,7 +254,7 @@ img {
         text-align: center;
         font-family: 'Muli', sans-serif;
         color: #dfdfdf;
-        font-size: 1.1em;
+        font-size: 1.25em;
         font-weight: 300;
         line-height: 1.5em;
     }
@@ -317,6 +325,7 @@ img {
         font-weight: 700;
         font-size: 2.25em;
         text-align: center;
+        margin-top: 3em;
     }
     h2 {
         font-family: 'Muli', sans-serif;
@@ -327,11 +336,26 @@ img {
         margin: 3em auto 0 auto;
     }
     .underline--magical {
-        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        background-image: linear-gradient(135deg, #FEB692 10%, #EA5455 100%);
         background-repeat: no-repeat;
-        background-size: 100% .2em;
+        background-size: 300% .05em;
         background-position: 0 100%;
-        transition: background-size 0.25s ease-in-out;
+        animation: Gradient 5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
     .x-green {
         top: 1520px;
@@ -394,9 +418,24 @@ img {
     .underline--magical {
         background-image: linear-gradient(56deg, #08AEEA 0%, #2AF598 100%);
         background-repeat: no-repeat;
-        background-size: 100% .2em;
+        background-size: 300% .05em;
         background-position: 0 100%;
-        transition: background-size 0.25s ease-in-out;
+        animation: Gradient 5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
     .circle-pink {
         top: 2200px;
@@ -452,13 +491,137 @@ img {
     .underline--magical {
         background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
         background-repeat: no-repeat;
-        background-size: 100% .2em;
+        background-size: 300% .05em;
         background-position: 0 100%;
-        transition: background-size 0.25s ease-in-out;
+        animation: Gradient 5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
     .circle-green {
         top: 3000px;
         left: -120px;
+    }
+}
+
+.map {
+    margin-top: 10em;
+    h1 {
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+        font-size: 2.25em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    a {
+        text-decoration: none;
+        background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+        background-repeat: no-repeat;
+        background-size: 100% .1em;
+        background-position: 0 100%;
+        color: white;
+    }
+    p {
+        margin-top: 2em;
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #dfdfdf;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    .left {
+        order: 1; //background: #3d0000;
+        flex-basis: 100%;
+        height: 100%
+    }
+    .right {
+        order: 2; //background: #6d6d00;
+        flex-basis: 100%;
+        height: 100%;
+        .alert {
+            text-align: center;
+            padding: 10px;
+            background: #79c879;
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 10px;
+            display: none;
+            font-family: 'Muli', sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 300px;
+            text-align: center;
+            margin: 0 auto;
+            input,
+            textarea {
+                border: 0;
+                outline: 0;
+                padding: 1em;
+                font-size: 1.1em;
+                display: block;
+                width: 100%;
+                margin-bottom: 1em;
+                font-family: 'Muli', sans-serif;
+                resize: none;
+            }
+            #input-submit {
+                color: white;
+                background: #3e81d8;
+                cursor: pointer;
+            }
+            textarea {
+                height: 301px;
+            }
+        }
+        /* Clearfix */
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+        .cf:after {
+            clear: both;
+        }
+    }
+    .underline--magical {
+        background-image: linear-gradient(to right, #ee0979, #ff6a00);
+        background-repeat: no-repeat;
+        background-size: 300% .05em;
+        background-position: 0 100%;
+        animation: Gradient 5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
 }
 
@@ -467,14 +630,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Muli', sans-serif;
-    padding-bottom: 2em;
-    padding-top: 5em;
+    padding-bottom: 0em;
+    padding-top: 45em;
     .footer-content {
         flex-wrap: wrap;
         white-space: nowrap;
         padding-left: 0.25em;
         padding-right: 0.25em;
-        margin-bottom: 15em;
+        margin-bottom: 5em;
         width: 95%;
         display: flex !important;
         justify-content: center;
@@ -490,10 +653,6 @@ footer {
             color: white;
         }
     }
-    background-image: url('../../assets/Footer/Mask\ Group\ 2.svg');
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 @media only screen and (min-width: 320px) {
@@ -523,6 +682,13 @@ footer {
     }
     .container {
         width: 423px;
+    }
+    .map {
+        .right {
+            form {
+                max-width: 423px;
+            }
+        }
     }
     .hero-content {
         .mailinglist {
@@ -558,8 +724,6 @@ footer {
         }
     }
     footer {
-        padding-bottom: 1em;
-        padding-top: 2em;
         a {
             margin-left: 0em !important;
             margin-right: 0em !important;
@@ -573,6 +737,13 @@ footer {
 @media only screen and (min-width: 674px) {
     .container {
         width: 624px;
+    }
+    .map {
+        .right {
+            form {
+                max-width: 624px;
+            }
+        }
     }
     .hero-content {
         h2 {
@@ -597,24 +768,6 @@ footer {
         p {
             font-size: 1.25em;
         }
-    } // .about-container {
-    //     flex-wrap: nowrap;
-    // }
-    // .about {
-    //     .map-responsive {
-    //         padding-bottom: 56.25%;
-    //     }
-    //     .map-responsive iframe {
-    //         width: 90%;
-    //     }
-    // }    
-    .left {
-        flex-basis: 200px;
-        order: 1;
-    }
-    .right {
-        flex-basis: 200px;
-        order: 2;
     }
     .sponsors {
         .circle-pink {
@@ -622,10 +775,6 @@ footer {
             right: 0px;
             display: inline;
         }
-    }
-    footer {
-        padding-bottom: 1em;
-        padding-top: 10em;
     }
 }
 
@@ -639,7 +788,17 @@ footer {
     .container {
         width: 960px;
     }
+    .map {
+        .right {
+            form {
+                max-width: 423px;
+            }
+        }
+    }
     .about-container {
+        flex-wrap: nowrap;
+    }
+    .map-container {
         flex-wrap: nowrap;
     }
     .about {
@@ -672,14 +831,6 @@ footer {
         .triangle-purple-2 {
             display: inline;
         }
-    }
-    .left {
-        flex-basis: 200px;
-        order: 1;
-    }
-    .right {
-        flex-basis: 200px;
-        order: 2;
     }
     .schedule {
         h1 {
@@ -715,7 +866,18 @@ footer {
             left: -20px;
         }
     }
+    .map {
+        h1 {
+            text-align: left;
+        }
+    }
     footer {
+        background-image: url('../../assets/Footer/Mask\ Group\ 2.svg');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 2em;
+        padding-top: 5em;
         a {
             margin-left: 1em !important;
             margin-right: 1em !important;
@@ -726,6 +888,13 @@ footer {
 @media only screen and (min-width: 1576px) {
     .container {
         width: 1320px;
+    }
+    .map {
+        .right {
+            form {
+                max-width: 600px;
+            }
+        }
     }
     .about {
         .map-responsive {
