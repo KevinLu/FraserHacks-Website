@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: 100%;
+    //overflow-x: hidden;
+}
+
+body {
+    background-color: #13191E;
+    color: white;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+form, iframe, noscript {
+    margin: 0 0 1.45rem;
+    padding: 0;
+    outline: 0;
+}
+
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    -webkit-background-clip-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
