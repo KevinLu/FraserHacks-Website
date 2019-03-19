@@ -245,9 +245,25 @@ img {
         text-decoration: none;
         background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
         background-repeat: no-repeat;
-        background-size: 100% .1em;
+        background-size: 300% .1em;
         background-position: 0 100%;
         color: white;
+        animation: Gradient 1.5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
     p {
         margin-top: 2em;
@@ -340,7 +356,7 @@ img {
         background-repeat: no-repeat;
         background-size: 300% .05em;
         background-position: 0 100%;
-        animation: Gradient 5s ease infinite;
+        animation: Gradient 2s ease infinite;
         animation-play-state: paused;
         @keyframes Gradient {
             0% {
@@ -389,9 +405,25 @@ img {
             text-decoration: none;
             background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
             background-repeat: no-repeat;
-            background-size: 100% .1em;
+            background-size: 300% .1em;
             background-position: 0 100%;
             color: white;
+            animation: Gradient 1.5s ease infinite;
+            animation-play-state: paused;
+            @keyframes Gradient {
+                0% {
+                    background-position: 0% 100%
+                }
+                50% {
+                    background-position: 100% 100%
+                }
+                100% {
+                    background-position: 0% 100%
+                }
+            }
+        }
+        :hover {
+            animation-play-state: running;
         }
     }
     .logo {
@@ -420,7 +452,7 @@ img {
         background-repeat: no-repeat;
         background-size: 300% .05em;
         background-position: 0 100%;
-        animation: Gradient 5s ease infinite;
+        animation: Gradient 2s ease infinite;
         animation-play-state: paused;
         @keyframes Gradient {
             0% {
@@ -474,9 +506,25 @@ img {
         text-decoration: none;
         background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
         background-repeat: no-repeat;
-        background-size: 100% .1em;
+        background-size: 500% .1em;
         background-position: 0 100%;
         color: white;
+        animation: Gradient 1.5s ease infinite;
+        animation-play-state: paused;
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+            50% {
+                background-position: 100% 100%
+            }
+            100% {
+                background-position: 0% 100%
+            }
+        }
+    }
+    :hover {
+        animation-play-state: running;
     }
     .row {
         display: flex;
@@ -493,7 +541,7 @@ img {
         background-repeat: no-repeat;
         background-size: 300% .05em;
         background-position: 0 100%;
-        animation: Gradient 5s ease infinite;
+        animation: Gradient 2s ease infinite;
         animation-play-state: paused;
         @keyframes Gradient {
             0% {
@@ -620,7 +668,7 @@ img {
         background-repeat: no-repeat;
         background-size: 300% .05em;
         background-position: 0 100%;
-        animation: Gradient 5s ease infinite;
+        animation: Gradient 2s ease infinite;
         animation-play-state: paused;
         @keyframes Gradient {
             0% {

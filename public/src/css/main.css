@@ -318,9 +318,42 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
   background-repeat: no-repeat;
-  background-size: 100% .1em;
+  background-size: 300% .1em;
   background-position: 0 100%;
   color: white;
+  -webkit-animation: Gradient 1.5s ease infinite;
+          animation: Gradient 1.5s ease infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.about :hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .about p {
@@ -437,22 +470,10 @@ img {
   background-repeat: no-repeat;
   background-size: 300% .05em;
   background-position: 0 100%;
-  -webkit-animation: Gradient 5s ease infinite;
-          animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 2s ease infinite;
+          animation: Gradient 2s ease infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
 }
 
 @keyframes Gradient {
@@ -511,9 +532,30 @@ img {
   text-decoration: none;
   background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
   background-repeat: no-repeat;
-  background-size: 100% .1em;
+  background-size: 300% .1em;
   background-position: 0 100%;
   color: white;
+  -webkit-animation: Gradient 1.5s ease infinite;
+          animation: Gradient 1.5s ease infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.sponsors h3 :hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .sponsors .logo {
@@ -556,8 +598,8 @@ img {
   background-repeat: no-repeat;
   background-size: 300% .05em;
   background-position: 0 100%;
-  -webkit-animation: Gradient 5s ease infinite;
-          animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 2s ease infinite;
+          animation: Gradient 2s ease infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
@@ -626,9 +668,30 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(#1FA2FF), color-stop(51%, #12D8FA), to(#1FA2FF));
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
   background-repeat: no-repeat;
-  background-size: 100% .1em;
+  background-size: 500% .1em;
   background-position: 0 100%;
   color: white;
+  -webkit-animation: Gradient 1.5s ease infinite;
+          animation: Gradient 1.5s ease infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.faq :hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .faq .row {
@@ -651,8 +714,8 @@ img {
   background-repeat: no-repeat;
   background-size: 300% .05em;
   background-position: 0 100%;
-  -webkit-animation: Gradient 5s ease infinite;
-          animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 2s ease infinite;
+          animation: Gradient 2s ease infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
@@ -808,8 +871,8 @@ img {
   background-repeat: no-repeat;
   background-size: 300% .05em;
   background-position: 0 100%;
-  -webkit-animation: Gradient 5s ease infinite;
-          animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 2s ease infinite;
+          animation: Gradient 2s ease infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
