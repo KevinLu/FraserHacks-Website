@@ -335,7 +335,7 @@ img {
 }
 
 .schedule {
-    margin-top: 10em;
+    margin-top: 20em;
     h1 {
         font-family: 'Muli', sans-serif;
         font-weight: 700;
@@ -433,8 +433,8 @@ img {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-top: 2em;
-        margin-bottom: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     .justify-content-center {
         justify-content: center !important;
@@ -793,6 +793,9 @@ footer {
                 padding: 10.58px;
             }
         }
+    }
+    .schedule {
+        margin-top: 10em;
     }
     footer {
         a {

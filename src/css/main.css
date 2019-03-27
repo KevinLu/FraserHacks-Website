@@ -445,7 +445,7 @@ img {
 }
 
 .schedule {
-  margin-top: 10em;
+  margin-top: 20em;
 }
 
 .schedule h1 {
@@ -571,8 +571,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2em;
-  margin-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .sponsors .justify-content-center {
@@ -987,6 +987,9 @@ footer .footer-content a {
   }
   .hero-content .mailinglist button {
     padding: 10.58px;
+  }
+  .schedule {
+    margin-top: 10em;
   }
   footer a {
     margin-left: 0em !important;
