@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon tag -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>FraserHacks 2019 - Hacker Application</title>
+    <meta name="description"
+        content="FraserHacks is Mississauga's largest high school hackathon organized by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together on May 4, 2019, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'>
+
+    <link rel="stylesheet" href="src/css/apply.css">
+</head>
+
+<body>
+    <div class="upform">
+        <form>
+            <div class="upform-header"></div>
+            <div class="upform-main">
+
+                <div class="input-block">
+                    <div class="label">What is your name?</div>
+                    <div class="input-control">
+                        <input type="text" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Which school are you from?</div>
+                    <div class="input-control">
+                        <input type="text" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                        <div class="label">What is your date of birth?</div>
+                        <div class="input-control">
+                            <input type="text" class="required" autocomplete="off">
+                        </div>
+                    </div>
+
+                <div class="input-block">
+                    <div class="label">Which gender do you identify as?</div>
+                    <div class="input-control">
+                        <input id="toggle-male-q1" class="toggle toggle-left" name="q1" value="male" type="radio">
+                        <label for="toggle-male-q1" class="btn">Male</label>
+                        <input id="toggle-female-q1" class="toggle toggle-right" name="q1" value="female" type="radio">
+                        <label for="toggle-female-q1" class="btn">Female</label>
+                        <input id="toggle-other-q1" class="toggle toggle-right" name="q1" value="other" type="radio">
+                        <label for="toggle-other-q1" class="btn">Other</label>
+                        <input id="toggle-na-q1" class="toggle toggle-right" name="q1" value="prefer not to answer" type="radio">
+                        <label for="toggle-na-q1" class="btn">Prefer not to answer</label>
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Do you have any dietary restrictions?
+                    </div>
+                    <div class="input-control">
+                            <input type="text" class="required" autocomplete="off">
+                        </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">What is your t-shirt size?</div>
+                    <div class="input-control">
+                        <input id="toggle-small-q3" class="toggle toggle-left" name="q3" value="small" type="radio">
+                        <label for="toggle-small-q3" class="btn">Small</label>
+                        <input id="toggle-medium-q3" class="toggle toggle-right" name="q3" value="medium" type="radio">
+                        <label for="toggle-medium-q3" class="btn">Medium</label>
+                        <input id="toggle-large-q3" class="toggle toggle-right" name="q3" value="large" type="radio">
+                        <label for="toggle-large-q3" class="btn">Large</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="upform-footer">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js'></script>
+    <script src="src/js/apply.js"></script>
+</body>
+
+</html>
