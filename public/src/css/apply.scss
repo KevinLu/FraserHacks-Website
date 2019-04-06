@@ -1,9 +1,19 @@
 /* PAGE & INPUT STYLING */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: 100%;
+    //overflow-x: hidden;
+}
+
 body {
     color: #FFF;
-    background: linear-gradient(to left, #141e30, #243b55);
-	background-size: 150% 150%;
-	animation: Gradient 60s ease infinite;
+    background: linear-gradient(to right, rgba(20, 30, 48, 0.96), rgba(36, 59, 85, 0.96)), url('../../assets/Hero/scott-webb-388797-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: Gradient 600s ease infinite;
 }
 
 @keyframes Gradient {
@@ -40,13 +50,17 @@ body {
     margin-top: -5px;
 }
 
-.btn-primary {
-    background-color: #fff;
-    color: #13191E;
-    :hover {
-        background-color: #13191E;
+
+    .btn-primary {
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        padding: 14px 28px;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
     }
-}
 
 input[type="radio"].toggle {
     display: none;

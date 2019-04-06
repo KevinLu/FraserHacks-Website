@@ -53,6 +53,7 @@
 
       //Clear form
       document.getElementById('applications').reset();
+      window.location.href = "success.html";
   }
 
   // Function to get get form values

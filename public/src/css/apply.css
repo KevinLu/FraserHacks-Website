@@ -1,11 +1,21 @@
 /* PAGE & INPUT STYLING */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-display: 100%;
+}
+
 body {
   color: #FFF;
-  background: -webkit-gradient(linear, right top, left top, from(#141e30), to(#243b55));
-  background: linear-gradient(to left, #141e30, #243b55);
-  background-size: 150% 150%;
-  -webkit-animation: Gradient 60s ease infinite;
-          animation: Gradient 60s ease infinite;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 30, 48, 0.96)), to(rgba(36, 59, 85, 0.96))), url("../../assets/Hero/scott-webb-388797-unsplash.jpg");
+  background: linear-gradient(to right, rgba(20, 30, 48, 0.96), rgba(36, 59, 85, 0.96)), url("../../assets/Hero/scott-webb-388797-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: Gradient 600s ease infinite;
+          animation: Gradient 600s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -56,12 +66,14 @@ body {
 }
 
 .btn-primary {
-  background-color: #fff;
-  color: #13191E;
-}
-
-.btn-primary :hover {
-  background-color: #13191E;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 input[type="radio"].toggle {
