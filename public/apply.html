@@ -19,42 +19,49 @@
 
 <body>
     <div class="upform">
-        <form>
+        <form id="applications">
             <div class="upform-header"></div>
             <div class="upform-main">
 
                 <div class="input-block">
                     <div class="label">What is your name?</div>
                     <div class="input-control">
-                        <input type="text" class="required" autocomplete="off">
+                        <input type="text" name="name" id="name" class="required" autocomplete="off">
                     </div>
                 </div>
 
                 <div class="input-block">
                     <div class="label">Which school are you from?</div>
                     <div class="input-control">
-                        <input type="text" class="required" autocomplete="off">
+                        <input type="text" name="school" id="school" class="required" autocomplete="off">
                     </div>
                 </div>
 
                 <div class="input-block">
                         <div class="label">What is your date of birth?</div>
                         <div class="input-control">
-                            <input type="text" class="required" autocomplete="off">
+                            <input type="text" name="dateofbirth" id="dateofbirth" class="required" autocomplete="off">
                         </div>
                     </div>
+
+                    <div class="input-block">
+                            <div class="label">What is your e-mail address?</div>
+                            <div class="input-control">
+                                <input type="email" name="email" id="email" class="required" autocomplete="off">
+                            </div>
+                        </div>
 
                 <div class="input-block">
                     <div class="label">Which gender do you identify as?</div>
                     <div class="input-control">
-                        <input id="toggle-male-q1" class="toggle toggle-left" name="q1" value="male" type="radio">
-                        <label for="toggle-male-q1" class="btn">Male</label>
-                        <input id="toggle-female-q1" class="toggle toggle-right" name="q1" value="female" type="radio">
-                        <label for="toggle-female-q1" class="btn">Female</label>
-                        <input id="toggle-other-q1" class="toggle toggle-right" name="q1" value="other" type="radio">
-                        <label for="toggle-other-q1" class="btn">Other</label>
-                        <input id="toggle-na-q1" class="toggle toggle-right" name="q1" value="prefer not to answer" type="radio">
-                        <label for="toggle-na-q1" class="btn">Prefer not to answer</label>
+                        <input id="toggle-male" class="toggle toggle-left" name="gender" value="male" type="radio">
+                        <label for="toggle-male" class="btn">Male</label>
+                        <input id="toggle-female" class="toggle toggle-right" name="gender" value="female" type="radio">
+                        <label for="toggle-female" class="btn">Female</label>
+                        <input id="toggle-other" class="toggle toggle-right" name="gender" value="other" type="radio">
+                        <label for="toggle-other" class="btn">Other</label>
+                        <input id="toggle-na" class="toggle toggle-right" name="gender" value="prefer not to answer" type="radio">
+                        <label for="toggle-na" class="btn">Prefer not to answer</label>
                     </div>
                 </div>
 
@@ -62,33 +69,35 @@
                     <div class="label">Do you have any dietary restrictions?
                     </div>
                     <div class="input-control">
-                            <input type="text" class="required" autocomplete="off">
+                            <input type="text" name="dietary" id="dietary" class="required" autocomplete="off">
                         </div>
                 </div>
 
                 <div class="input-block">
                     <div class="label">What is your t-shirt size?</div>
                     <div class="input-control">
-                        <input id="toggle-small-q3" class="toggle toggle-left" name="q3" value="small" type="radio">
-                        <label for="toggle-small-q3" class="btn">Small</label>
-                        <input id="toggle-medium-q3" class="toggle toggle-right" name="q3" value="medium" type="radio">
-                        <label for="toggle-medium-q3" class="btn">Medium</label>
-                        <input id="toggle-large-q3" class="toggle toggle-right" name="q3" value="large" type="radio">
-                        <label for="toggle-large-q3" class="btn">Large</label>
+                        <input id="toggle-small" class="toggle toggle-left" name="tshirt" value="small" type="radio">
+                        <label for="toggle-small" class="btn">Small</label>
+                        <input id="toggle-medium" class="toggle toggle-right" name="tshirt" value="medium" type="radio">
+                        <label for="toggle-medium" class="btn">Medium</label>
+                        <input id="toggle-large" class="toggle toggle-right" name="tshirt" value="large" type="radio">
+                        <label for="toggle-large" class="btn">Large</label>
                     </div>
                 </div>
 
             </div>
 
             <div class="upform-footer">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <input type="submit" value="submit" id="input-submit">
             </div>
 
         </form>
     </div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script src="src/js/apply.js"></script>
+    <script src="src/js/applyform.js"></script>
 </body>
 
 </html>

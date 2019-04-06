@@ -1,8 +1,8 @@
 /* PAGE & INPUT STYLING */
 body {
   color: #FFF;
-  background: -webkit-gradient(linear, left bottom, left top, from(#141e30), to(#243b55));
-  background: linear-gradient(to top, #141e30, #243b55);
+  background: -webkit-gradient(linear, right top, left top, from(#141e30), to(#243b55));
+  background: linear-gradient(to left, #141e30, #243b55);
   background-size: 150% 150%;
   -webkit-animation: Gradient 60s ease infinite;
           animation: Gradient 60s ease infinite;
@@ -159,6 +159,15 @@ textarea {
 }
 
 .upform .upform-main .input-block .input-control input[type=text] {
+  border: none;
+  outline-width: 0;
+  border-bottom: 2px solid #8f8f8f;
+  width: 100%;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.upform .upform-main .input-block .input-control input[type=email] {
   border: none;
   outline-width: 0;
   border-bottom: 2px solid #8f8f8f;

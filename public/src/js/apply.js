@@ -143,4 +143,4 @@ $.fn.upform = function() {
     }
   };
   
-  $(".upform").upform();
+  $(".upform").upform();  
