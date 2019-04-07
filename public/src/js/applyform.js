@@ -27,6 +27,7 @@
       var pdsb = getInputVal('pdsb');
       var dietary = getInputVal('dietary');
       var supervisor = getInputVal('supervisor');
+      var team = getInputVal('team');
 
       var gender;
       document.getElementsByName('gender').forEach(function (elm) {
@@ -43,7 +44,7 @@
       })
 
       // Save message
-      saveMessage(name, school, email, pdsb, dateofbirth, gender, dietary, supervisor, tshirt);
+      saveMessage(name, school, email, pdsb, dateofbirth, gender, dietary, supervisor, tshirt, team);
 
       //   // Show alert
       //   document.querySelector('.alert').style.display = 'block';
@@ -64,7 +65,7 @@
   }
 
   // Save message to firebase
-  function saveMessage(name, school, email, pdsb, dateofbirth, gender, dietary, supervisor, tshirt) {
+  function saveMessage(name, school, email, pdsb, dateofbirth, gender, dietary, supervisor, tshirt, team) {
       var newMessageRef = messagesRef.push();
       newMessageRef.set({
           name: name,
@@ -75,6 +76,7 @@
           tshirt: tshirt,
           email: email,
           pdsb: pdsb,
-          supervisor: supervisor
+          supervisor: supervisor,
+          team: team
       });
   }
