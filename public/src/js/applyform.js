@@ -56,6 +56,7 @@
 
       //Clear form
       document.getElementById('applications').reset();
+      ga('Student Form', 'submit', 'FraserHacks 2019');
       window.location.href = "success.html";
   }
 
