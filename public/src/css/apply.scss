@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: 100%;
+    overflow-x: hidden;
+    //overflow-y: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    user-select: none;
+    /* Non-prefixed version, currently
+                      supported by Chrome and Opera */
+    min-height: 100vh;
+    color: #FFF;
+    background: linear-gradient(to right, rgba(20, 30, 48, 0.96), rgba(36, 59, 85, 0.96)), url('../../assets/Hero/scott-webb-388797-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+    width: 80vw;
+}
+
+#hero-logo {
+    display: block;
+    height: 22.22222vh;
+    max-width: 75vw;
+    margin: 2em auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    background-repeat: no-repeat;
+    background-size: 300% .1em;
+    background-position: 0 100%;
+}

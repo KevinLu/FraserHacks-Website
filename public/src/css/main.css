@@ -64,6 +64,12 @@ img {
   border-style: none;
 }
 
+.img-jfss {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .absolute-asset {
   position: absolute;
   z-index: -999999;
@@ -147,6 +153,199 @@ img {
           animation: fade_move_down 4s ease-in-out infinite;
 }
 
+/* Mixins */
+/* bg shortcodes */
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: #1FA2FF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1FA2FF), color-stop(80%, #12D8FA), to(#12D8FA));
+  background: linear-gradient(180deg, #1FA2FF 0%, #12D8FA 80%, #12D8FA 100%);
+}
+
+.bg-gradient2 span,
+.bg-gradient2:before {
+  background: #4776E6;
+  background: -webkit-gradient(linear, left top, right top, from(#4776E6), color-stop(80%, #8E54E9), to(#8E54E9));
+  background: linear-gradient(90deg, #4776E6 0%, #8E54E9 80%, #8E54E9 100%);
+}
+
+.pop-onhover.bg-gradient3 span,
+.pop-onhover.bg-gradient3:before {
+  background: #B9AEF0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B9AEF0), color-stop(80%, #ADA1EB), to(#ADA1EB));
+  background: linear-gradient(180deg, #B9AEF0 0%, #ADA1EB 80%, #ADA1EB 100%);
+}
+
+.bg-gradient4 span {
+  background: #F6682F;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6682F), color-stop(80%, #F6682F), to(#F6682F));
+  background: linear-gradient(180deg, #F6682F 0%, #F6682F 80%, #F6682F 100%);
+}
+
+.fancy-button {
+  display: inline-block;
+  margin: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #ffffff;
+  position: relative;
+}
+
+.fancy-button.bg-gradient1 {
+  text-shadow: 0px 0px 1px #0c5991;
+}
+
+.fancy-button.bg-gradient2 {
+  text-shadow: 0px 0px 1px #12504f;
+}
+
+.fancy-button.bg-gradient3 {
+  text-shadow: 0 0 1px #546082;
+}
+
+.fancy-button:before {
+  content: '';
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  right: 10px;
+  z-index: -1;
+  border-radius: 2em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.fancy-button span {
+  display: inline-block;
+  padding: 16px 20px;
+  border-radius: 50em;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.fancy-button:focus {
+  color: #ffffff;
+}
+
+.fancy-button:hover {
+  color: #ffffff;
+}
+
+.fancy-button:hover span {
+  -webkit-filter: brightness(0.9) contrast(1.2);
+          filter: brightness(0.9) contrast(1.2);
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.fancy-button:hover:before {
+  bottom: 3px;
+  -webkit-filter: blur(6px) brightness(0.8);
+          filter: blur(6px) brightness(0.8);
+}
+
+.fancy-button:active span {
+  -webkit-filter: brightness(0.75) contrast(1.7);
+          filter: brightness(0.75) contrast(1.7);
+}
+
+.fancy-button.pop-onhover span {
+  border-radius: 4px;
+}
+
+.fancy-button.pop-onhover:before {
+  opacity: 0;
+  bottom: 10px;
+}
+
+.fancy-button.pop-onhover:hover:before {
+  bottom: -7px;
+  opacity: 1;
+  -webkit-filter: blur(16px);
+          filter: blur(16px);
+}
+
+.fancy-button.pop-onhover:hover span {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.fancy-button.pop-onhover:hover:active span {
+  -webkit-filter: brightness(1) contrast(1);
+          filter: brightness(1) contrast(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.fancy-button.pop-onhover:hover:active:before {
+  bottom: 0;
+  -webkit-filter: blur(5px) brightness(0.85);
+          filter: blur(5px) brightness(0.85);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.pop-onhover.bg-gradient3 span:hover {
+  background: #B9AEF0;
+  background: linear-gradient(120deg, #B9AEF0 0%, #ADA1EB 80%, #ADA1EB 100%);
+}
+
+.bg-gradient4:before {
+  bottom: 2px;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.bg-gradient4 {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.bg-gradient4 span {
+  outline: 0px solid transparent;
+}
+
+.bg-gradient4:hover span {
+  background: #FC3D7C;
+  background: linear-gradient(-25deg, #FC3D7C 0%, #F76A34 80%, #F76A34 100%);
+}
+
+.bg-gradient4:focus span,
+.bg-gradient4:active span {
+  background: #FC3D7C;
+  background: linear-gradient(25deg, #FC3D7C 0%, #F76A34 80%, #F76A34 100%);
+}
+
+.bg-gradient4:focus span {
+  -webkit-box-shadow: 0 0 9px #00FFF8;
+          box-shadow: 0 0 9px #00FFF8;
+}
+
+.bg-gradient4:active span {
+  -webkit-filter: brightness(0.85) contrast(1.3);
+          filter: brightness(0.85) contrast(1.3);
+}
+
+.bg-gradient4 span {
+  text-transform: capitalize;
+}
+
 /*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
   0% {
@@ -220,17 +419,24 @@ img {
   margin-top: 0em;
 }
 
-.hero-content a {
-  margin-top: 3em;
+.hero-content .signup {
+  text-align: center;
+  margin-top: 1em;
   font-family: 'Muli', sans-serif;
+}
+
+.hero-content .signup label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.25em;
+}
+
+.hero-content .signup a {
   text-decoration: none;
-  border: 2px solid white;
-  border-radius: 50px;
-  color: white;
-  padding: 14px 28px;
-  font-size: 1.2em;
-  font-weight: 300;
-  cursor: pointer;
+}
+
+.hero-content .signup a:hover, .hero-content .signup a:focus, .hero-content .signup a:active {
+  text-decoration: none;
 }
 
 .hero-content .mailinglist-alert {
@@ -293,19 +499,6 @@ img {
 .hero-content .mailinglist button:hover {
   border: 1px solid #10396e;
   background-color: #10396e;
-}
-
-.hero-content .mailinglist a {
-  margin-top: 0 !important;
-  font-family: 'Muli', sans-serif;
-  text-decoration: none;
-  border: none !important;
-  border-radius: 0px;
-  color: white;
-  padding: 0 0 !important;
-  font-size: 1em;
-  font-weight: 300;
-  cursor: pointer;
 }
 
 .about {
