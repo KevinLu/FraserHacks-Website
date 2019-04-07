@@ -48,7 +48,7 @@ body {
   padding: 5px 10px;
   font-size: 20px;
   position: relative;
-  text-align: left;
+  text-align: center;
   border-radius: 3px;
   -webkit-transition: background 60ms ease, color 60ms ease;
   transition: background 60ms ease, color 60ms ease;
