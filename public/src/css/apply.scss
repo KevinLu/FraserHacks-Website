@@ -76,9 +76,9 @@ $neon: #00FFF8;
     @include gradientBg(90deg, #4776E6, #8E54E9);
 }
 
-.pop-onhover.bg-gradient3 span,
-.pop-onhover.bg-gradient3:before {
-    @include gradientBg(180deg, #B9AEF0, #ADA1EB);
+.bg-gradient3 span,
+.bg-gradient3:before {
+    @include gradientBg(90deg, #EB3349, #F45C43);
 }
 
 .bg-gradient4 span {
