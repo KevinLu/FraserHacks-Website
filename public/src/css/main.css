@@ -64,6 +64,12 @@ img {
   border-style: none;
 }
 
+.img-jfss {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .absolute-asset {
   position: absolute;
   z-index: -999999;

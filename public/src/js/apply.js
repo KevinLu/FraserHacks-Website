@@ -46,7 +46,7 @@ $.fn.upform = function() {
         $(this).blur();
       });
       $(e).addClass("active");
-      /*$(e).find('input').focus();*/
+      $(e).find('input').focus();
     }
   
     function rescroll(e) {
@@ -119,7 +119,7 @@ $.fn.upform = function() {
         $(this).blur();
       });
       $(e).addClass("active");
-      /*$(e).find('input').focus();*/
+      $(e).find('input').focus();
     }
   
     function rescroll(e) {

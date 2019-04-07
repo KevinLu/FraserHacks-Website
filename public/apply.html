@@ -18,89 +18,36 @@
 </head>
 
 <body>
-    <div class="upform">
-        <form id="applications">
-            <div class="upform-header">
-                <h1>Welcome to the FraserHacks 2019 Hacker Application!</h1>
-                <h4>We just need to you answer a few simple questions.</h4>
-            </div>
-            <div class="upform-main">
+    <div class="container">
+            <img id="hero-logo" src="assets/Hero/FraserHacks-logo.svg" alt="FraserHacks Logo: Blue circular logo">
+        <p>In accordance with school regulations, every <b>FraserHacks</b> team must have a teacher supervisor.</p>
 
-                <div class="input-block">
-                    <div class="label">What is your name?</div>
-                    <div class="input-control">
-                        <input type="text" name="name" id="name" class="required" autocomplete="off">
-                    </div>
-                </div>
+        <br>
 
-                <div class="input-block">
-                    <div class="label">Which school are you from?</div>
-                    <div class="input-control">
-                        <input type="text" name="school" id="school" class="required" autocomplete="off">
-                    </div>
-                </div>
+        <p> There is a
+            maximum
+            of 20 students, or 5 teams, per teacher. Please talk to a teacher or administration member to supervise your
+            school’s teams by filling out the teacher application.</p>
 
-                <div class="input-block">
-                    <div class="label">What is your date of birth?</div>
-                    <div class="input-control">
-                        <input type="text" name="dateofbirth" id="dateofbirth" class="required" autocomplete="off">
-                    </div>
-                </div>
+        <br>
 
-                <div class="input-block">
-                    <div class="label">What is your e-mail address?</div>
-                    <div class="input-control">
-                        <input type="email" name="email" id="email" class="required" autocomplete="off">
-                    </div>
-                </div>
-
-                <div class="input-block">
-                    <div class="label">Which gender do you identify as?</div>
-                    <div class="input-control">
-                        <input id="toggle-male" class="toggle toggle-left" name="gender" value="male" type="radio">
-                        <label for="toggle-male" class="btn">Male</label>
-                        <input id="toggle-female" class="toggle toggle-right" name="gender" value="female" type="radio">
-                        <label for="toggle-female" class="btn">Female</label>
-                        <input id="toggle-other" class="toggle toggle-right" name="gender" value="other" type="radio">
-                        <label for="toggle-other" class="btn">Other</label>
-                        <input id="toggle-na" class="toggle toggle-right" name="gender" value="prefer not to answer"
-                            type="radio">
-                        <label for="toggle-na" class="btn">Prefer not to answer</label>
-                    </div>
-                </div>
-
-                <div class="input-block">
-                    <div class="label">Do you have any dietary restrictions?
-                    </div>
-                    <div class="input-control">
-                        <input type="text" name="dietary" id="dietary" class="required" autocomplete="off">
-                    </div>
-                </div>
-
-                <div class="input-block">
-                    <div class="label">What is your t-shirt size?</div>
-                    <div class="input-control">
-                        <input id="toggle-small" class="toggle toggle-left" name="tshirt" value="small" type="radio">
-                        <label for="toggle-small" class="btn">Small</label>
-                        <input id="toggle-medium" class="toggle toggle-right" name="tshirt" value="medium" type="radio">
-                        <label for="toggle-medium" class="btn">Medium</label>
-                        <input id="toggle-large" class="toggle toggle-right" name="tshirt" value="large" type="radio">
-                        <label for="toggle-large" class="btn">Large</label>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="upform-footer">
-                <input class="btn-primary" type="submit" value="Submit" id="input-submit">
-            </div>
-        </form>
+        <p><b>Teacher and school</b> registrations can be found <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1fQkFuEvncN8SAJVW_mTj0JW-ldL_tBjZQVGKFGsuyLHRpg/viewform">here</a>.</p>
+        <br>
+        <p>
+            After your teacher has filled out the application, you may register for the event as a <b>hacker</b>
+            <a href="student.html">here</a>.
+        </p>
+        <br>
+        <p>
+            If you are unable to find a teacher supervisor but still would like to attend FraserHacks, please register
+            for the event but indicate that you were unable to find a supervisor. We may be able to pair you under a
+            teacher from another school.
+        </p>
+        <br>
+        <p>
+            Please e-mail <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a> if you have any questions regarding the application process.
+        </p>
     </div>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js'></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script src="src/js/apply.js"></script>
-    <script src="src/js/applyform.js"></script>
 </body>
 
 </html>
