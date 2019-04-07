@@ -1,0 +1,203 @@
+/* PAGE & INPUT STYLING */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: 100%;
+    //overflow-x: hidden;
+}
+
+body {
+    color: #FFF;
+    background: linear-gradient(to right, rgba(20, 30, 48, 0.96), rgba(36, 59, 85, 0.96)), url('../../assets/Hero/scott-webb-388797-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: Gradient 600s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.btn {
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    border-radius: 3px;
+    transition: background 60ms ease, color 60ms ease;
+}
+
+.btn span {
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -5px;
+}
+
+
+.btn-primary {
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+input[type="radio"].toggle {
+    display: none;
+}
+
+input[type="radio"].toggle+label {
+    cursor: pointer;
+    min-width: 80px;
+}
+
+input[type="radio"].toggle+label:hover {
+    background: none;
+    color: #FFF;
+}
+
+input[type="radio"].toggle+label:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+input[type="radio"].toggle.toggle-left+label {}
+
+input[type="radio"].toggle.toggle-left+label:after {
+    left: 100%;
+}
+
+input[type="radio"].toggle.toggle-right+label {
+    margin-left: 10px;
+}
+
+input[type="radio"].toggle.toggle-right+label:after {
+    left: -100%;
+}
+
+input[type="radio"].toggle:checked+label {
+    background: #FFF;
+    cursor: default;
+    color: #13191E;
+}
+
+input[type="radio"].toggle:checked+label:after {
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    background-repeat: no-repeat;
+    background-size: 300% .1em;
+    background-position: 0 100%;
+}
+
+/* ENDS */
+
+/* UPFORM STYLE STARTS*/
+.upform input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #ffffff !important;
+}
+
+.upform input,
+select,
+textarea {
+    background: rgba(255, 255, 255, 0.02);
+    color: #FFF;
+}
+
+.upform {
+    font-family: 'Open Sans', sans-serif;
+    /* Non-prefixed version, currently
+                      supported by Chrome and Opera */
+    max-width: 900px;
+    margin: 300px auto;
+    margin-bottom: 500px;
+    padding: 0 20px;
+}
+
+.upform .upform-main {}
+
+.upform .upform-main .input-block {
+    padding: 30px 0;
+    opacity: 0.25;
+    cursor: default;
+}
+
+.upform .upform-main .input-block .label {
+    display: block;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+.upform .upform-main .input-block .input-control {
+    margin: 20px 0;
+}
+
+.upform .upform-main .input-block .input-control input[type=text] {
+    border: none;
+    outline-width: 0;
+    border-bottom: 2px solid #8f8f8f;
+    width: 100%;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.upform .upform-main .input-block .input-control input[type=email] {
+    border: none;
+    outline-width: 0;
+    border-bottom: 2px solid #8f8f8f;
+    width: 100%;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.upform .upform-main .input-block.active {
+    opacity: 1;
+}
+
+.upform .upform-footer {
+    margin-top: 60px;
+}
+
+.upform .upform-footer .btn {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+/* UPFORM STYLE ENDS*/

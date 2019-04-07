@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: 100%;
+    //overflow-x: hidden;
+    //overflow-y: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    /* Non-prefixed version, currently
+                      supported by Chrome and Opera */
+    min-height: 100vh;
+    color: #FFF;
+    background: linear-gradient(to right, rgba(20, 30, 48, 0.96), rgba(36, 59, 85, 0.96)), url('../../assets/Hero/scott-webb-388797-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+    width: 80vw;
+}
+
+#hero-logo {
+    display: block;
+    height: 22.22222vh;
+    max-width: 75vw;
+    margin: 2em auto;
+    vertical-align: middle;
+}
+
+.underlined {
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    background-repeat: no-repeat;
+    background-size: 300% .1em;
+    background-position: 0 100%;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+$neon: #00FFF8;
+
+/* Mixins */
+@mixin gradientBg($direction, $startColor, $endColor) {
+    background: $startColor;
+    background: -moz-linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+    background: -webkit-linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+    background: linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%);
+}
+
+/* bg shortcodes */
+.bg-gradient1 span,
+.bg-gradient1:before {
+    @include gradientBg(180deg, #1FA2FF, #12D8FA);
+}
+
+.bg-gradient2 span,
+.bg-gradient2:before {
+    @include gradientBg(90deg, #4776E6, #8E54E9);
+}
+
+.pop-onhover.bg-gradient3 span,
+.pop-onhover.bg-gradient3:before {
+    @include gradientBg(180deg, #B9AEF0, #ADA1EB);
+}
+
+.bg-gradient4 span {
+    @include gradientBg(180deg, #F6682F, #F6682F);
+}
+
+.fancy-button {
+    display: inline-block;
+    margin: 20px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #ffffff;
+    position: relative;
+
+    &.bg-gradient1 {
+        text-shadow: 0px 0px 1px #0c5991;
+    }
+
+    &.bg-gradient2 {
+        text-shadow: 0px 0px 1px #12504f;
+    }
+
+    &.bg-gradient3 {
+        text-shadow: 0 0 1px #546082;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 40px;
+        position: absolute;
+        bottom: -1px;
+        left: 10px;
+        right: 10px;
+        z-index: -1;
+        border-radius: 2em;
+        transform-style: preserve-3d;
+        transition: all 0.3s ease-out;
+    }
+
+    span {
+        display: inline-block;
+        padding: 16px 20px;
+        border-radius: 50em;
+        position: relative;
+        z-index: 2;
+        will-change: transform, filter;
+        transform-style: preserve-3d;
+        transition: all 0.3s ease-out;
+    }
+
+    &:focus {
+        color: #ffffff;
+    }
+
+    &:hover {
+        color: #ffffff;
+
+        span {
+            filter: brightness(.9) contrast(1.2);
+            transform: scale(0.96);
+        }
+
+        &:before {
+            bottom: 3px;
+            filter: blur(6px) brightness(0.8);
+        }
+    }
+
+    &:active span {
+        filter: brightness(.75) contrast(1.7);
+    }
+
+    &.pop-onhover {
+        span {
+            border-radius: 4px;
+        }
+
+        &:before {
+            opacity: 0;
+            bottom: 10px;
+        }
+
+        &:hover {
+            &:before {
+                bottom: -7px;
+                opacity: 1;
+                filter: blur(16px);
+            }
+
+            span {
+                // transform: scale(1.03);
+                transform: scale(1);
+            }
+
+            &:active {
+                span {
+                    filter: brightness(1) contrast(1);
+                    transform: scale(1);
+                    transition: all 0.2s ease-out;
+                }
+
+                &:before {
+                    bottom: 0;
+                    filter: blur(5px) brightness(0.85);
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+}
+
+.pop-onhover.bg-gradient3 span:hover {
+    @include gradientBg(120deg, #B9AEF0, #ADA1EB);
+}
+
+
+//solid to gradient
+
+.bg-gradient4:before {
+    bottom: 2px;
+    opacity: 0.6;
+    transition: all 0.3s ease-out;
+}
+
+.bg-gradient4 {
+    transition: all 1s ease;
+
+    span {
+        outline: 0px solid transparent;
+    }
+
+    &:hover span {
+        @include gradientBg(-25deg, #FC3D7C, #F76A34);
+    }
+
+    &:focus span,
+    &:active span {
+        @include gradientBg(25deg, #FC3D7C, #F76A34);
+    }
+
+    &:focus span {
+        // outline: 2px solid $neon;
+        box-shadow: 0 0 9px $neon;
+    }
+
+    &:active span {
+        filter: brightness(.85) contrast(1.3);
+    }
+}
+
+.bg-gradient4 span {
+    text-transform: capitalize;
+}

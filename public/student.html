@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon tag -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>FraserHacks 2019 - Hacker Application</title>
+    <meta name="description"
+        content="FraserHacks is Mississauga's largest high school hackathon organized by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together on May 4, 2019, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700'>
+
+    <link rel="stylesheet" href="src/css/student.css">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-129790437-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129790437-1');
+    </script>
+</head>
+
+<body>
+    <div class="upform">
+        <form id="applications">
+            <div class="upform-header">
+                <h1>FraserHacks 2019 Hacker Signup</h1>
+                <h4>This form is only to be filled out by students hackers. If you have any questions, please visit our
+                    website at: <a href="https://www.fraserhacks.ca/">https://www.fraserhacks.ca/</a>, or email us at:
+                    <a href="mailto:contact@fraserhacks.ca">contact@fraserhacks.ca</a>.</h4>
+            </div>
+            <div class="upform-main">
+
+                <div class="input-block">
+                    <div class="label">What is your name?</div>
+                    <div class="input-control">
+                        <input type="text" name="name" id="name" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Which school are you from?</div>
+                    <div class="input-control">
+                        <input type="text" name="school" id="school" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">What is your date of birth?</div>
+                    <div class="input-control">
+                        <input type="text" name="dateofbirth" id="dateofbirth" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">What is your e-mail address?</div>
+                    <div class="input-control">
+                        <input type="email" name="email" id="email" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">What is your PDSB student number? (If applicable)</div>
+                    <div class="input-control">
+                        <input type="text" name="pdsb" id="pdsb" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Which gender do you identify as?</div>
+                    <div class="input-control">
+                        <input id="toggle-male" class="toggle toggle-left" name="gender" value="male" type="radio">
+                        <label for="toggle-male" class="btn">Male</label>
+                        <input id="toggle-female" class="toggle toggle-right" name="gender" value="female" type="radio">
+                        <label for="toggle-female" class="btn">Female</label>
+                        <input id="toggle-other" class="toggle toggle-right" name="gender" value="other" type="radio">
+                        <label for="toggle-other" class="btn">Other</label>
+                        <input id="toggle-na" class="toggle toggle-right" name="gender" value="prefer not to answer"
+                            type="radio">
+                        <label for="toggle-na" class="btn">Prefer not to answer</label>
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Do you have any dietary restrictions?
+                    </div>
+                    <div class="input-control">
+                        <input type="text" name="dietary" id="dietary" class="required" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">What is your t-shirt size?</div>
+                    <div class="input-control">
+                        <input id="toggle-small" class="toggle toggle-left" name="tshirt" value="small" type="radio">
+                        <label for="toggle-small" class="btn">Small</label>
+                        <input id="toggle-medium" class="toggle toggle-right" name="tshirt" value="medium" type="radio">
+                        <label for="toggle-medium" class="btn">Medium</label>
+                        <input id="toggle-large" class="toggle toggle-right" name="tshirt" value="large" type="radio">
+                        <label for="toggle-large" class="btn">Large</label>
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <div class="label">Who is your teacher supervisor? (If applicable)
+                    </div>
+                    <div class="input-control">
+                        <input type="text" name="supervisor" id="supervisor" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="input-block">
+                        <div class="label">Who will be on your team? (Maximum 4 people per team)
+                        </div>
+                        <div class="input-control">
+                            <input type="text" name="team" id="team" autocomplete="off">
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="upform-footer">
+                <input class="btn-primary" type="submit" value="Submit" id="input-submit">
+            </div>
+        </form>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js'></script>
+    <script src="//www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+    <script src="//www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+    <script src="src/js/apply.js"></script>
+    <script src="src/js/applyform.js"></script>
+</body>
+
+</html>
