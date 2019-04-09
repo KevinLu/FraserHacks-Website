@@ -640,6 +640,34 @@ img {
 .schedule {
   margin-top: 20em;
 }
+.schedule .containertb {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+.schedule .containertb td {
+  font-weight: normal;
+  font-size: 1.25em;
+  padding: 1em;
+}
+
+.schedule .containertb th {
+  padding: 1em;
+  background-color: #13191E;
+}
+
+.schedule .containertb tr:nth-child(odd) {
+  background-color: #323C50;
+}
+
+.schedule .containertb tr:nth-child(even) {
+  background-color: #2C3446;
+}
+
 
 .schedule h1 {
   font-family: 'Muli', sans-serif;
