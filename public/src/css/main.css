@@ -640,34 +640,6 @@ img {
 .schedule {
   margin-top: 20em;
 }
-.schedule .containertb {
-  font-family: 'Muli', sans-serif;
-  text-align: left;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  display: table;
-}
-
-.schedule .containertb td {
-  font-weight: normal;
-  font-size: 1.25em;
-  padding: 1em;
-}
-
-.schedule .containertb th {
-  padding: 1em;
-  background-color: #13191E;
-}
-
-.schedule .containertb tr:nth-child(odd) {
-  background-color: #323C50;
-}
-
-.schedule .containertb tr:nth-child(even) {
-  background-color: #2C3446;
-}
-
 
 .schedule h1 {
   font-family: 'Muli', sans-serif;
@@ -1366,6 +1338,77 @@ footer .footer-content a {
   }
   .schedule {
     margin-top: 0;
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-top: 2em;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-family: 'Muli', sans-serif;
+}
+
+table tr {
+  background-color: #13191E;
+  border: 1px solid #2a3944;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
